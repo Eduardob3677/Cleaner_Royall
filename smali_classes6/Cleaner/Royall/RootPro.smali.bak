@@ -842,13 +842,3 @@
 
     return-void
 .end method
-
-.method public static isPremiumActive()Z
-    .locals 1
-    
-    # Patched: Always return true (premium active)
-    const/4 v0, 0x1
-    
-    return v0
-.end method
-

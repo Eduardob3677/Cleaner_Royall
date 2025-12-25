@@ -1,0 +1,52 @@
+======================================================================
+Cleaner Royall - Premium License Patcher
+======================================================================
+
+This tool will patch the app to permanently activate premium license
+by modifying Smali code and asset files.
+
+[*] Creating backup...
+  [SUCCESS] Backup created
+
+[*] Patching premium check scripts...
+  [PATCHED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Premium/check
+  [PATCHED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Premium/check2.txt
+
+[*] Encrypting patched scripts...
+  [ENCRYPTED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Premium/check
+  [ENCRYPTED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Premium/check2.txt
+
+[*] Patching Smali files...
+  [PATCHED] MainActivity.smali
+  [SKIP] PremiumActivity.smali - no changes needed
+  [SKIP] PremiumForumActivity.smali - no changes needed
+  [PATCHED] ModuleActivity.smali
+  [PATCHED] MinicleanerActivity.smali
+  [PATCHED] OnetapActivity.smali
+  [PATCHED] WhatsappActivity.smali
+  [SKIP] SmartCleanActivity.smali - no changes needed
+  [SKIP] OnlinecleanersActivity.smali - no changes needed
+  [SKIP] DynamicActivity.smali - no changes needed
+  [SKIP] CustomCleanerActivity.smali - no changes needed
+  [SKIP] CustomDirActivity.smali - no changes needed
+  [SKIP] SettingsActivity.smali - no changes needed
+
+[*] Patching RootPro.smali...
+  [PATCHED] RootPro.smali - Added isPremiumActive() method
+
+[*] Creating premium activation marker...
+  [CREATED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Premium/activated.marker
+
+======================================================================
+[*] Patching complete!
+[*] Total Smali files patched: 5
+[*] Backup location: /home/runner/work/Cleaner_Royall/Cleaner_Royall/backup_original
+======================================================================
+
+[!] Next steps:
+  1. Recompile APK using: apktool b . -o CleanerRoyall_Premium.apk
+  2. Sign APK using: apksigner or jarsigner
+  3. Install and test the patched APK
+
+[!] Note: Premium license is now permanently active!
+======================================================================
