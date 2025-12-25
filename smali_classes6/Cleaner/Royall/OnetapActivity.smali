@@ -2702,6 +2702,26 @@
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onPostCreate(Landroid/os/Bundle;)V
 
+    # Patched: Auto-activate premium on OnetapActivity start
+    # Set premium access markers
+    const-string v0, "premiumAcess"
+    const-string v1, "1"
+    invoke-static {v0, v1}, LCleaner/Royall/wh;->a(Ljava/lang/String;Ljava/lang/Object;)V
+
+    const-string v0, "pforum"
+    const-string v1, "1"
+    invoke-static {v0, v1}, LCleaner/Royall/wh;->a(Ljava/lang/String;Ljava/lang/Object;)V
+
+    # Save purchased status to SharedPreferences
+    iget-object v0, p0, LCleaner/Royall/OnetapActivity;->al:Landroid/content/SharedPreferences;
+    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+    move-result-object v0
+    const-string v1, "purchased"
+    const-string v2, "1"
+    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+    move-result-object v0
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
+
     new-instance p1, LCleaner/Royall/uk;
 
     invoke-direct {p1, p0}, LCleaner/Royall/uk;-><init>(LCleaner/Royall/OnetapActivity;)V
