@@ -1,0 +1,17 @@
+
+rm -rf /data/data/*/cache/*
+find /data/data/*/cache/* -delete &
+rm -rf /data_mirror/*/null/0/*/cache &
+rm -rf /data/data/*/code_cache
+find /data/data/*/code_cache -delete &
+rm -rf /data/user_de/*/*/cache
+find /data/user_de/*/*/cache -delete &
+rm -rf /data/user_de/*/*/code_cache/*
+find /data/user_de/*/*/code_cache -delete &
+rm -rf /data/media/*/Android/data/*/cache &
+rm -rf /cache/*
+
+rm -rf /data_mirror/*/null/*/*/cache
+rm -rf /data_mirror/*/null/*/*/code_cache
+
+pm trim-caches 999G > /dev/null 2>&1

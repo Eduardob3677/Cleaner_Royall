@@ -1887,7 +1887,6 @@
     move-result-object v0
 
     const-string v1, "Premium/check"
-    # Patched: Premium check bypassed
 
     const-string v2, "SECURE"
 

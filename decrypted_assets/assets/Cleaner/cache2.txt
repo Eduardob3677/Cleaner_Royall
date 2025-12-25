@@ -1,0 +1,10 @@
+
+rm -rf /data_mirror/*/null/*/*/cache
+rm -rf /data_mirror/*/null/*/*/code_cache
+
+rm -rf /data/*/*/*/cache
+rm -rf /data/*/*/*/code_cache
+
+find /data -type d -name "cache" -exec rm -rf {} \;
+find /data -type d -name "Cache" -exec rm -rf {} \;
+

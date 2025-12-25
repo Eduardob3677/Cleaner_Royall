@@ -1,0 +1,12 @@
+
+rm -rf /data/adb/lspd/log
+rm -rf /data/adb/lspd/log.old
+rm -rf /data/system/*/logging/server_logging/log
+rm -rf /data/misc/update_engine_log
+rm -rf /data/system/*/tmp/runtime.log
+rm -rf /data/log
+rm -rf /data/logger
+rm -rf /data/data/*/files/debug_log
+rm -rf /data/data/*/files/Logs
+rm -rf /storage/emulated/0/Android/data/*/files/*/log*
+rm -rf /dev/log/*

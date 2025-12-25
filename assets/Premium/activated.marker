@@ -1,0 +1,9 @@
+# Premium License Active
+# Patched by Premium License Patcher
+# This marker indicates permanent premium activation
+
+PREMIUM=true
+TRIAL=false
+EXPIRED=false
+ACTIVATION_DATE=permanent
+LICENSE_TYPE=lifetime

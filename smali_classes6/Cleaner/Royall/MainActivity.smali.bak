@@ -5501,7 +5501,6 @@
     move-result-object v0
 
     const-string v1, "Premium/check2.txt"
-    # Patched: Premium check bypassed
 
     const-string v2, "SECURE"
 

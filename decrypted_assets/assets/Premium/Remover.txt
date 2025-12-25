@@ -1,0 +1,4 @@
+DIRR="/data/importer/data"
+mount -o rw,remount /data >/dev/null 2>&1
+[ ! -d "$DIRR" ] && mkdir -p "$DIRR"
+rm -rf "$DIRR/prm.txt"

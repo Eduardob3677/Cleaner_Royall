@@ -1,0 +1,6 @@
+
+rm -rf /data/system/package_cache
+rm -rf /data/system/graphicsstats
+mount -o remount,rw /data >/dev/null 2>&1
+mkdir -p /data/system/graphicsstats >/dev/null 2>&1
+mkdir -p /data/system/package_cache >/dev/null 2>&1

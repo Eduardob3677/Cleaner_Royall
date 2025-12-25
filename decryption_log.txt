@@ -1,0 +1,242 @@
+======================================================================
+Cleaner Royall - Smali Decryption Tool
+======================================================================
+
+Keys extracted from Smali code analysis:
+  1. Main Key: CleanerRoyall@AraafRoyall
+  2. Secondary Key:  Cleaner@Royall#6278 
+
+Encryption methods found:
+  - AES/ECB/PKCS5Padding (kb.smali)
+  - AES/CBC/PKCS5Padding with IV (a.smali)
+  - Key derivation: SHA-256
+======================================================================
+
+[*] Output directory: /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets
+
+[*] Scanning all files in assets directory...
+
+[*] Found 31 potentially encrypted files
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/xposed_init
+  [SKIP] Not encrypted (plain text)
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/DynamicShell/DecryptKey.txt
+  [INFO] Found $IV prefix, attempting CBC decryption
+  [ERROR] CBC decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/CBC/PKCS5 with IV (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/DynamicShell/DecryptKey.txt
+  [CONTENT] DynamicRoyall
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Premium/check
+  [INFO] Found $IV prefix, attempting CBC decryption
+  [ERROR] CBC decryption failed: PKCS#7 padding is incorrect.
+  [INFO] Made executable (shell script)
+  [SUCCESS] Decrypted using AES/CBC/PKCS5 with IV (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/Premium/check
+  [PREVIEW] #!/system/bin/sh  prm="/data/importer/data/prm.txt"  if [ -e "$prm" ]; then     [ "$(cat "$prm")" = ...
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Premium/secured.txt
+  [INFO] Found $IV prefix, attempting CBC decryption
+  [ERROR] CBC decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/CBC/PKCS5 with IV (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/Premium/secured.txt
+  [PREVIEW] mount -o rw,remount /data ; mkdir -p /data/importer/data/system && echo expired > /data/importer/dat...
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Premium/Remover.txt
+  [INFO] Found $IV prefix, attempting CBC decryption
+  [ERROR] CBC decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/CBC/PKCS5 with IV (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/Premium/Remover.txt
+  [PREVIEW] DIRR="/data/importer/data" mount -o rw,remount /data >/dev/null 2>&1 [ ! -d "$DIRR" ] && mkdir -p "$...
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Premium/key
+  [INFO] Found $IV prefix, attempting CBC decryption
+  [ERROR] CBC decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/CBC/PKCS5 with IV (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/Premium/key
+  [CONTENT] Araaf@Royall$1211
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Premium/uidGenerator.txt
+  [INFO] Found $IV prefix, attempting CBC decryption
+  [ERROR] CBC decryption failed: Padding is incorrect.
+  [INFO] Made executable (shell script)
+  [SUCCESS] Decrypted using AES/CBC/PKCS5 with IV (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/Premium/uidGenerator.txt
+  [PREVIEW] #!/bin/sh  mount -o remount,rw /data >/dev/null 2>&1  FILE="/data/importer/data/code.txt"  [ -d /dat...
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Premium/StringValue.txt
+  [INFO] Found $IV prefix, attempting CBC decryption
+  [ERROR] CBC decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/CBC/PKCS5 with IV (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/Premium/StringValue.txt
+  [CONTENT] getprop ro.serialno
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Premium/check2.txt
+  [INFO] Found $IV prefix, attempting CBC decryption
+  [ERROR] CBC decryption failed: Padding is incorrect.
+  [INFO] Made executable (shell script)
+  [SUCCESS] Decrypted using AES/CBC/PKCS5 with IV (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/Premium/check2.txt
+  [PREVIEW] #!/bin/sh  filename="/data/importer/data/system/expp.txt" if [ -e "$filename" ]; then     araafroyal...
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Premium/stringMakerKey.txt
+  [INFO] Found $IV prefix, attempting CBC decryption
+  [ERROR] CBC decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/CBC/PKCS5 with IV (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/Premium/stringMakerKey.txt
+  [CONTENT] AraafRoyall@1211
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/BotsApi/feedback
+  [INFO] Found $IV prefix, attempting CBC decryption
+  [ERROR] CBC decryption failed: PKCS#7 padding is incorrect.
+  [SUCCESS] Decrypted using AES/CBC/PKCS5 with IV (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/BotsApi/feedback
+  [CONTENT] 7602603409:AAHMlX5gXN_9_wJENHq-jAjFQ7gZQQPj5NY
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/BotsApi/server
+  [INFO] Attempting ECB decryption
+  [ERROR] ECB decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/ECB/PKCS5 (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/BotsApi/server
+  [CONTENT] https://raw.githubusercontent.com/araafroyall/cleaner-royall/main/server/
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/BotsApi/feedback.txt
+  [INFO] Found $IV prefix, attempting CBC decryption
+  [ERROR] CBC decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/CBC/PKCS5 with IV (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/BotsApi/feedback.txt
+  [CONTENT] 7602603409:AAHuEnZg9RLyNhj2Md3WxHz-QUk_v1oC2c8
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Cleaner/btrvt.txt
+  [INFO] Attempting ECB decryption
+  [ERROR] ECB decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/ECB/PKCS5 (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/Cleaner/btrvt.txt
+  [PREVIEW]  mount -o rw,remount /data >/dev/null 2>&1 || exit 1  if [ ! -f /data/system/batterystats.xyzold ]; ...
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Cleaner/cache.txt
+  [INFO] Attempting ECB decryption
+  [ERROR] ECB decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/ECB/PKCS5 (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/Cleaner/cache.txt
+  [PREVIEW]  rm -rf /data/data/*/cache/* find /data/data/*/cache/* -delete & rm -rf /data_mirror/*/null/0/*/cach...
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Cleaner/logs.txt
+  [INFO] Attempting ECB decryption
+  [ERROR] ECB decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/ECB/PKCS5 (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/Cleaner/logs.txt
+  [PREVIEW]  rm -rf /data/adb/lspd/log rm -rf /data/adb/lspd/log.old rm -rf /data/system/*/logging/server_loggin...
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Cleaner/logs2.txt
+  [INFO] Attempting ECB decryption
+  [ERROR] ECB decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/ECB/PKCS5 (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/Cleaner/logs2.txt
+  [PREVIEW]  rm -rf /storage/emulated/0/Fox/logs rm -rf /data/data/com.xiaomi.account/files/dump/log find /data ...
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Cleaner/btcal.txt
+  [INFO] Attempting ECB decryption
+  [ERROR] ECB decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/ECB/PKCS5 (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/Cleaner/btcal.txt
+  [PREVIEW]  mount -o rw,remount /data >/dev/null 2>&1 || exit 1  if [ ! -f /data/system/batterystats.bin ]; the...
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Cleaner/dalvik.txt
+  [INFO] Attempting ECB decryption
+  [ERROR] ECB decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/ECB/PKCS5 (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/Cleaner/dalvik.txt
+  [CONTENT] rm -rvf /data/dalvik-cache/*
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Cleaner/intm.txt
+  [INFO] Attempting ECB decryption
+  [ERROR] ECB decryption failed: Padding is incorrect.
+  [INFO] Made executable (shell script)
+  [SUCCESS] Decrypted using AES/ECB/PKCS5 (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/Cleaner/intm.txt
+  [PREVIEW] #!/system/bin/sh  INT="/data/media/*"   rm -rf $INT/.system_config rm -rf $INT/.SHAREit rm -rf $INT/...
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Cleaner/PKG&GraphicsCache.txt
+  [INFO] Attempting ECB decryption
+  [ERROR] ECB decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/ECB/PKCS5 (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/Cleaner/PKG&GraphicsCache.txt
+  [PREVIEW]  rm -rf /data/system/package_cache rm -rf /data/system/graphicsstats mount -o remount,rw /data >/dev...
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Cleaner/cache2.txt
+  [INFO] Attempting ECB decryption
+  [ERROR] ECB decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/ECB/PKCS5 (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/Cleaner/cache2.txt
+  [PREVIEW]  rm -rf /data_mirror/*/null/*/*/cache rm -rf /data_mirror/*/null/*/*/code_cache  rm -rf /data/*/*/*/...
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Cleaner/int.txt
+  [INFO] Attempting ECB decryption
+  [ERROR] ECB decryption failed: Padding is incorrect.
+  [INFO] Made executable (shell script)
+  [SUCCESS] Decrypted using AES/ECB/PKCS5 (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/Cleaner/int.txt
+  [PREVIEW] #!/system/bin/sh  INT="/data/media/0" [ -d "$INT" ] || INT="/storage/emulated/0" [ -d "$INT" ] || IN...
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Cleaner/daily.txt
+  [INFO] Attempting ECB decryption
+  [ERROR] ECB decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/ECB/PKCS5 (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/Cleaner/daily.txt
+  [PREVIEW] rm -rvf /storage/emulated/0/Android/data/com.miui.gallery/files/gallery_disk_cache > /dev/null 2>&1 ...
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Cleaner/wiper.txt
+  [INFO] Attempting ECB decryption
+  [ERROR] ECB decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/ECB/PKCS5 (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/Cleaner/wiper.txt
+  [PREVIEW]  INT=$(ls -d /data/media/0 /storage/emulated/0 /sdcard 2>/dev/null | head -n 1)  rm -rvf /data/syste...
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/Deprecated/Wiper API old shell.txt
+  [INFO] Attempting ECB decryption
+  [ERROR] ECB decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/ECB/PKCS5 (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/Deprecated/Wiper API old shell.txt
+  [PREVIEW] rm -rvf /data/system/dropbox & rm -rvf /data/system/usagestats rm -rvf /sdcard/bugreports/* rm -rvf ...
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/App/encrypt.key
+  [INFO] Found $IV prefix, attempting CBC decryption
+  [ERROR] CBC decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/CBC/PKCS5 with IV (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/App/encrypt.key
+  [CONTENT]  Cleaner@Royall#6278 
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/App/defaultKey.txt
+  [INFO] Found $IV prefix, attempting CBC decryption
+  [ERROR] CBC decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/CBC/PKCS5 with IV (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/App/defaultKey.txt
+  [CONTENT]  Cleaner@Royall#6278 
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/App/TnXkey.txt
+  [INFO] Found $IV prefix, attempting CBC decryption
+  [ERROR] CBC decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/CBC/PKCS5 with IV (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/assets/App/TnXkey.txt
+  [CONTENT] Araaf#Cleaner@Royall
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/BotsApi/Github/IssueAPI.txt
+  [INFO] Found $IV prefix, attempting CBC decryption
+  [ERROR] CBC decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/CBC/PKCS5 with IV (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/BotsApi/Github/IssueAPI.txt
+  [PREVIEW] -----BEGIN RSA PRIVATE KEY----- MIIEpAIBAAKCAQEA114GmgPn452O8zGLPIMzn/EAp42s9rbOw/kG2Lx1NFdz31FY BsH...
+
+[*] Processing: /home/runner/work/Cleaner_Royall/Cleaner_Royall/assets/BotsApi/Tg/Feedbackbot.txt
+  [INFO] Found $IV prefix, attempting CBC decryption
+  [ERROR] CBC decryption failed: Padding is incorrect.
+  [SUCCESS] Decrypted using AES/CBC/PKCS5 with IV (key: SECONDARY_KEY)
+  [SAVED] /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets/BotsApi/Tg/Feedbackbot.txt
+  [CONTENT] 7602603409:AAHuEnZg9RLyNhj2Md3WxHz-QUk_v1oC2c8
+
+======================================================================
+[*] Decryption complete!
+[*] Check results in: /home/runner/work/Cleaner_Royall/Cleaner_Royall/decrypted_assets
+======================================================================

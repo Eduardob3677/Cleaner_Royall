@@ -1,0 +1,9 @@
+
+rm -rf /storage/emulated/0/Fox/logs
+rm -rf /data/data/com.xiaomi.account/files/dump/log
+find /data -type f -name "*.log" -delete
+rm -rf /data/vendor/wlan_logs
+rm -rf /data/vendor/thermal/thermal.dump
+rm -rf /data/vendor/thermal/last_thermal.dump
+rm -rf /data/vendor/thermal/thermal_history.dump
+rm -rf /data/vendor/thermal/thermal_history_last.dump
