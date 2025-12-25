@@ -149,7 +149,7 @@ class PremiumActivator:
         
         return activation_data
     
-    def generate_premium_files(self, output_dir: str = "premium_activation"):
+    def generate_premium_files(self, output_dir: str = "premium_activation", uid: str = None):
         """
         Generate all premium activation files
         These files should be pushed to device at /data/importer/data/
@@ -157,10 +157,14 @@ class PremiumActivator:
         output_path = Path(output_dir)
         output_path.mkdir(exist_ok=True)
         
+        if uid:
+            self.device_uid = uid
+        
         print(f"\n[*] Generating premium activation files in: {output_path.absolute()}")
         
         # Generate UID
-        self.device_uid = self.generate_uid()
+        if not self.device_uid:
+            self.device_uid = self.generate_uid()
         print(f"[+] Device UID: {self.device_uid}")
         
         # 1. Create code.txt (UID file)
@@ -426,9 +430,26 @@ def main():
     # Create activator instance
     activator = PremiumActivator()
     
+    # Optional UID customization via CLI
+    custom_uid = None
+    for idx, arg in enumerate(sys.argv[1:]):
+        if arg in ("--uid", "-u"):
+            if idx + 2 <= len(sys.argv[1:]):
+                custom_uid = sys.argv[1:][idx + 1].strip()
+            continue
+        if arg.startswith("--uid="):
+            custom_uid = arg.split("=", 1)[1].strip()
+    
+    if custom_uid:
+        if not (custom_uid.isdigit() and len(custom_uid) == 8):
+            print("[ERROR] UID personalizado inválido. Debe tener 8 dígitos numéricos.")
+            return 1
+        activator.device_uid = custom_uid
+        print(f"[*] Usando UID personalizado: {custom_uid}")
+    
     # Generate premium activation files
     try:
-        activation_token = activator.generate_premium_files()
+        activation_token = activator.generate_premium_files(uid=activator.device_uid)
         
         # Verify signature (for demonstration)
         print("\n[*] Verifying RSA signature...")
