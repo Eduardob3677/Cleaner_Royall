@@ -1375,7 +1375,9 @@
     :catch_0
     const-string p1, "JSON Error 001\n\nPlease Contact Developer for Help"
 
-    goto :goto_1
+    invoke-static {p0, v5, p1}, LCleaner/Royall/aax;->a(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_2
 
     :cond_2
     :goto_0
