@@ -1,0 +1,9 @@
+#!/system/bin/sh
+
+prm="/data/importer/data/prm.txt"
+
+if [ -e "$prm" ]; then
+    [ "$(cat "$prm")" = "cache" ] && print premium verified || { araafroyall; exit 1; }
+else
+    araafroyall; exit 1
+fi

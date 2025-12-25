@@ -1,0 +1,12 @@
+rm -rvf /data/system/dropbox &
+rm -rvf /data/system/usagestats
+rm -rvf /sdcard/bugreports/*
+rm -rvf /data/log
+rm -rvf /sdcard/Android/data/*/cache &
+rm -rvf /data/data/*/cache &
+rm -rvf /data/local/tmp/*
+rm -rvf /data/logger
+rm -rvf /sdcard/LOST.DIR
+rm -rvf /data/anr
+rm -rvf /data/tombstones
+rm -rvf /sdcard/DCIM/.thumbnails &

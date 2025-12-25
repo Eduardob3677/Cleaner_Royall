@@ -1,0 +1,11 @@
+#!/bin/sh
+
+mount -o remount,rw /data >/dev/null 2>&1
+
+FILE="/data/importer/data/code.txt"
+
+[ -d /data/importer/data ] || mkdir -p /data/importer/data
+
+[ -f "$FILE" ] && grep -oE '^[0-9]{8}$' "$FILE" && exit 0
+
+echo $(( (RANDOM%9000+1000)*10000 + RANDOM%10000 )) > "$FILE" && cat "$FILE"
