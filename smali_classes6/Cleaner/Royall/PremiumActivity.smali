@@ -1387,16 +1387,16 @@
 
     if-eqz p1, :cond_3
 
-    const-string p1, "\ud835\udddc\ud835\uddfb\ud835\uddf3\ud835\uddfc\ud835\uddff\ud835\uddfa\ud835\uddee\ud835\ude01\ud835\uddf6\ud835\uddfc\ud835\uddfb"
+    const-string p1, "\ud835\udde3\ud835\uddff\ud835\uddf2\ud835\uddfa\ud835\uddf6\ud835\ude02\ud835\uddfa \ud835\uddd9\ud835\uddfc\ud835\uddff\ud835\ude02\ud835\uddfa"
 
-    const-string v0, "Waiting ...\nYou Filled forum Recently, Please wait upto 6 hour to verify & Enable Premium Access for You\n\nThanks for your Patience \ud83d\udc4d.\n\nFor Any other Problem , Please Contact Developer for Help"
+    const-string v0, "Valid Premium Forum\n\nYour Premium Forum submission has been received and is being processed.\n\nPlease wait upto 6 hours to verify & Enable Premium Access for You\n\nThanks for your Patience \ud83d\udc4d.\n\nFor Any other Problem, Please Contact Developer for Help"
 
     invoke-static {p0, p1, v0}, LCleaner/Royall/aax;->a(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_2
 
     :cond_3
-    const-string p1, "Premium is Not Purchased or Not Verified Yet.\n\nIf you just Purchased Premium , Please Submit Premium Forum first to get Access\n\nThanks for your Patience \ud83d\udc4d.\n\nFor Any other Problem , Please Contact Developer for Help"
+    const-string p1, "Premium is Not Purchased or Not Verified Yet.\n\nIf you just Purchased Premium, Please Submit Premium Forum first to get Access\n\nThanks for your Patience \ud83d\udc4d.\n\nFor Any other Problem, Please Contact Developer for Help"
 
     :goto_1
     invoke-static {p0, v5, p1}, LCleaner/Royall/aax;->a(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
