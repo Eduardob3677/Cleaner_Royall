@@ -1379,27 +1379,22 @@
 
     :cond_2
     :goto_0
-    const-string p1, "pforum"
-
-    invoke-static {p1}, LCleaner/Royall/wh;->c(Ljava/lang/String;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_3
+    # Patched: Always show Valid Premium Forum
+    # Original checked if pforum exists - now always shows success
 
     const-string p1, "\ud835\udde3\ud835\uddff\ud835\uddf2\ud835\uddfa\ud835\uddf6\ud835\ude02\ud835\uddfa \ud835\uddd9\ud835\uddfc\ud835\uddff\ud835\ude02\ud835\uddfa"
 
-    const-string v0, "Valid Premium Forum\n\nYour Premium Forum submission has been received and is being processed.\n\nPlease wait upto 6 hours to verify & Enable Premium Access for You\n\nThanks for your Patience \ud83d\udc4d.\n\nFor Any other Problem, Please Contact Developer for Help"
+    const-string v0, "Valid Premium Forum\n\nYour Premium Forum submission has been received and is being processed.\n\nPremium features are now permanently activated!\n\nThanks for your Patience \ud83d\udc4d.\n\nFor Any other Problem, Please Contact Developer for Help"
 
     invoke-static {p0, p1, v0}, LCleaner/Royall/aax;->a(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
 
-    goto :goto_2
+    # Activate premium markers
+    const-string p1, "pforum"
+    const-string v0, "1"
+    invoke-static {p1, v0}, LCleaner/Royall/wh;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
-    :cond_3
-    const-string p1, "Premium is Not Purchased or Not Verified Yet.\n\nIf you just Purchased Premium, Please Submit Premium Forum first to get Access\n\nThanks for your Patience \ud83d\udc4d.\n\nFor Any other Problem, Please Contact Developer for Help"
-
-    :goto_1
-    invoke-static {p0, v5, p1}, LCleaner/Royall/aax;->a(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+    const-string p1, "premiumAcess"
+    invoke-static {p1, v0}, LCleaner/Royall/wh;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
     :goto_2
     return-void
@@ -1930,80 +1925,34 @@
 .method public e()V
     .locals 4
 
+    # Patched: Always activate premium - bypass all checks
+    # Original code checked premiumAcess == "1" and id.length == 5
+    # Now always proceeds to activate premium
+
+    # Set premium access
     const-string v0, "premiumAcess"
-
-    invoke-static {v0}, LCleaner/Royall/wh;->b(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
     const-string v1, "1"
+    invoke-static {v0, v1}, LCleaner/Royall/wh;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    # Set pforum (Premium Forum valid)
+    const-string v0, "pforum"
+    invoke-static {v0, v1}, LCleaner/Royall/wh;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
-    move-result v0
-
-    if-eqz v0, :cond_0
-
+    # Set check marker for activation
     iget-object v0, p0, LCleaner/Royall/PremiumActivity;->h:Ljava/util/HashMap;
+    const-string v2, "check"
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v1, "id"
-
-    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    const/4 v1, 0x5
-
-    if-ne v0, v1, :cond_0
-
+    # Create mock activation data to bypass API call
     new-instance v0, LCleaner/Royall/zw;
-
     const-string v1, "X"
-
     invoke-direct {v0, v1}, LCleaner/Royall/zw;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p0}, LCleaner/Royall/PremiumActivity;->getApplicationContext()Landroid/content/Context;
+    # Instead of calling API, directly activate premium
+    # by calling the success handler logic
+    invoke-virtual {p0}, LCleaner/Royall/PremiumActivity;->h()V
+    invoke-virtual {p0}, LCleaner/Royall/PremiumActivity;->b()V
 
-    move-result-object v1
-
-    const-string v2, "/BotsApi/server"
-
-    const-string v3, "SECURE"
-
-    invoke-static {v1, v2, v3}, LCleaner/Royall/a;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, "premium/activator"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    new-instance v2, LCleaner/Royall/PremiumActivity$$ExternalSyntheticLambda3;
-
-    invoke-direct {v2, p0, v0}, LCleaner/Royall/PremiumActivity$$ExternalSyntheticLambda3;-><init>(LCleaner/Royall/PremiumActivity;LCleaner/Royall/zw;)V
-
-    new-instance v3, LCleaner/Royall/PremiumActivity$$ExternalSyntheticLambda4;
-
-    invoke-direct {v3, p0, v0}, LCleaner/Royall/PremiumActivity$$ExternalSyntheticLambda4;-><init>(LCleaner/Royall/PremiumActivity;LCleaner/Royall/zw;)V
-
-    invoke-static {p0, v1, v0, v2, v3}, LCleaner/Royall/zt;->a(Landroid/app/Activity;Ljava/lang/String;LCleaner/Royall/zw;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {p0}, LCleaner/Royall/PremiumActivity;->g()V
-
-    :goto_0
     return-void
 .end method
 
@@ -2064,26 +2013,29 @@
 .method public g()V
     .locals 2
 
-    const-string v0, "\ud835\uddd8\ud835\uddff\ud835\uddff\ud835\uddfc\ud835\uddff"
+    # Patched: Instead of showing "Hackers Stay Away" message,
+    # directly activate premium and show success
+    # Original code tried to prevent bypass - we now enable it
 
-    const-string v1, "Hackers Stay Away \ud83d\ude42 \nBe Honest\n\nPlease Don\'t try to Bypass Premium\nRespect my Hard work."
+    # Show premium activated successfully
+    const-string v0, "\ud835\udde3\ud835\uddff\ud835\uddf2\ud835\uddfa\ud835\uddf6\ud835\ude02\ud835\uddfa \ud835\uddd4\ud835\uddf0\ud835\ude01\ud835\uddf6\ud835\ude03\ud835\uddee\ud835\ude01\ud835\uddf2\ud835\uddf1"
+
+    const-string v1, "Premium Activated Successfully!\n\nAll premium features are now unlocked permanently.\n\nEnjoy unlimited access to all features \ud83d\udc4d"
 
     invoke-static {p0, v0, v1}, LCleaner/Royall/aax;->a(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
 
-    :try_start_0
-    new-instance v0, Ljava/lang/Thread;
+    # Set all premium markers
+    const-string v0, "premiumAcess"
+    const-string v1, "1"
+    invoke-static {v0, v1}, LCleaner/Royall/wh;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
-    new-instance v1, LCleaner/Royall/wz;
+    const-string v0, "pforum"
+    invoke-static {v0, v1}, LCleaner/Royall/wh;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
-    invoke-direct {v1, p0}, LCleaner/Royall/wz;-><init>(LCleaner/Royall/PremiumActivity;)V
+    # Update UI to show premium status
+    invoke-virtual {p0}, LCleaner/Royall/PremiumActivity;->h()V
+    invoke-virtual {p0}, LCleaner/Royall/PremiumActivity;->b()V
 
-    invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
-
-    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
     return-void
 .end method
 
@@ -2205,50 +2157,37 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onPostCreate(Landroid/os/Bundle;)V
 
     :try_start_0
-    iget-object p1, p0, LCleaner/Royall/PremiumActivity;->M:Landroid/content/SharedPreferences;
+    # Patched: Always activate premium - bypass purchased check
+    # Original code checked SharedPreferences "purchased" == "1"
+    # Now always set premium as active
 
-    const-string v0, "purchased"
-
-    const-string v1, ""
-
-    invoke-interface {p1, v0, v1}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
+    # Set premium access marker
+    const-string p1, "premiumAcess"
     const-string v0, "1"
+    invoke-static {p1, v0}, LCleaner/Royall/wh;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    # Set pforum marker (Premium Forum always valid)
+    const-string p1, "pforum"
+    const-string v0, "1"
+    invoke-static {p1, v0}, LCleaner/Royall/wh;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
-    move-result p1
+    # Save purchased status to SharedPreferences
+    iget-object p1, p0, LCleaner/Royall/PremiumActivity;->M:Landroid/content/SharedPreferences;
+    invoke-interface {p1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+    move-result-object p1
+    const-string v0, "purchased"
+    const-string v1, "1"
+    invoke-interface {p1, v0, v1}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+    move-result-object p1
+    invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
-    if-eqz p1, :cond_0
-
+    # Always show premium UI
     invoke-virtual {p0}, LCleaner/Royall/PremiumActivity;->h()V
 
     invoke-virtual {p0}, LCleaner/Royall/PremiumActivity;->b()V
-
-    goto :goto_0
-
-    :cond_0
-    iget-object p1, p0, LCleaner/Royall/PremiumActivity;->o:Landroid/widget/LinearLayout;
-
-    const/16 v0, 0x8
-
-    invoke-virtual {p1, v0}, Landroid/widget/LinearLayout;->setVisibility(I)V
-
-    iget-object p1, p0, LCleaner/Royall/PremiumActivity;->l:Landroid/widget/LinearLayout;
-
-    invoke-virtual {p1, v0}, Landroid/widget/LinearLayout;->setVisibility(I)V
-
-    iget-object p1, p0, LCleaner/Royall/PremiumActivity;->p:Landroid/widget/TextView;
-
-    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setVisibility(I)V
-
-    invoke-virtual {p0}, LCleaner/Royall/PremiumActivity;->d()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :catch_0
-    :goto_0
     return-void
 .end method
