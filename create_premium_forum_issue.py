@@ -310,6 +310,76 @@ class PremiumForumIssueCreator:
         print(f"[✓] Issue data saved to: {issue_file}")
 
 
+def get_user_input():
+    """Get premium forum data from user input"""
+    print("\n" + "="*60)
+    print("PREMIUM FORUM DATA INPUT")
+    print("="*60)
+    print("\nPlease enter the following information:")
+    print("(Press Enter to use auto-generated values)\n")
+    
+    # Get Forum ID
+    forum_id = input("Forum ID (5 digits) [auto]: ").strip()
+    if not forum_id:
+        forum_id = None
+        print(f"  → Will auto-generate Forum ID")
+    else:
+        print(f"  → Using Forum ID: {forum_id}")
+    
+    # Get Payment Method
+    print("\nPayment Method options:")
+    print("  1. paypal")
+    print("  2. credit_card")
+    print("  3. bank_transfer")
+    print("  4. other")
+    method_input = input("Select method (1-4) or enter custom [paypal]: ").strip()
+    
+    method_map = {
+        "1": "paypal",
+        "2": "credit_card",
+        "3": "bank_transfer",
+        "4": "other"
+    }
+    
+    if method_input in method_map:
+        method = method_map[method_input]
+    elif method_input:
+        method = method_input
+    else:
+        method = "paypal"
+    print(f"  → Using method: {method}")
+    
+    # Get Contact
+    contact = input("\nContact (e.g., @username) [auto]: ").strip()
+    if not contact:
+        contact = None
+        print(f"  → Will auto-generate contact")
+    else:
+        if not contact.startswith("@"):
+            contact = "@" + contact
+        print(f"  → Using contact: {contact}")
+    
+    # Get UID
+    uid = input("\nDevice UID (8 digits) [auto]: ").strip()
+    if not uid:
+        uid = None
+        print(f"  → Will auto-generate UID")
+    else:
+        print(f"  → Using UID: {uid}")
+    
+    # Get Comment
+    comment = input("\nComment (optional): ").strip()
+    print(f"  → Comment: {comment if comment else '(empty)'}")
+    
+    return {
+        "forum_id": forum_id,
+        "method": method,
+        "contact": contact,
+        "uid": uid,
+        "comment": comment
+    }
+
+
 def main():
     """Main function"""
     print("""
@@ -327,44 +397,60 @@ def main():
     # Create issue creator
     creator = PremiumForumIssueCreator()
     
-    # Example 1: Create issue with specific data
+    # Get user input
+    user_data = get_user_input()
+    
+    # Confirm before creating
     print("\n" + "="*60)
-    print("EXAMPLE 1: Creating issue with specific data")
+    print("CONFIRMATION")
+    print("="*60)
+    print("\nYou are about to create a GitHub issue with the following data:")
+    print(f"  Forum ID: {user_data['forum_id'] or 'Auto-generated'}")
+    print(f"  Method: {user_data['method']}")
+    print(f"  Contact: {user_data['contact'] or 'Auto-generated'}")
+    print(f"  UID: {user_data['uid'] or 'Auto-generated'}")
+    print(f"  Comment: {user_data['comment'] or '(empty)'}")
+    
+    confirm = input("\nCreate issue? (y/n) [y]: ").strip().lower()
+    
+    if confirm and confirm != 'y' and confirm != 'yes':
+        print("\n❌ Issue creation cancelled by user.")
+        return 0
+    
+    # Create the issue
+    print("\n" + "="*60)
+    print("CREATING ISSUE")
     print("="*60)
     
-    issue1 = creator.create_premium_forum_issue(
-        forum_id="61359",
-        method="paypal",
-        contact="@misfitbtly",
-        uid="14268193",
-        comment=""
+    issue = creator.create_premium_forum_issue(
+        forum_id=user_data['forum_id'],
+        method=user_data['method'],
+        contact=user_data['contact'],
+        uid=user_data['uid'],
+        comment=user_data['comment']
     )
     
-    if issue1:
-        print("\n✅ SUCCESS! Premium Forum issue created.")
+    if issue:
+        print("\n" + "="*60)
+        print("✅ SUCCESS!")
+        print("="*60)
+        print(f"\nIssue #{issue['number']} created successfully!")
+        print(f"Title: {issue['title']}")
+        print(f"URL: {issue['html_url']}")
+        print(f"\nLocal data saved in: premium_forum_issues/")
     else:
-        print("\n❌ FAILED to create issue.")
+        print("\n" + "="*60)
+        print("❌ FAILED")
+        print("="*60)
+        print("\nFailed to create issue. Please check the error messages above.")
         return 1
     
-    # Example 2: Create issue with auto-generated data
-    print("\n\n" + "="*60)
-    print("EXAMPLE 2: Creating issue with auto-generated data")
-    print("="*60)
-    
-    issue2 = creator.create_premium_forum_issue(
-        method="credit_card",
-        contact="@testuser",
-        comment="Test activation from Python script"
-    )
-    
-    if issue2:
-        print("\n✅ SUCCESS! Second issue created.")
-    
+    # Ask if user wants to create another issue
     print("\n" + "="*60)
-    print("ISSUE CREATION COMPLETED")
-    print("="*60)
-    print("\nAll issues have been created and saved locally.")
-    print("Check the 'premium_forum_issues' directory for details.")
+    another = input("\nCreate another issue? (y/n) [n]: ").strip().lower()
+    
+    if another == 'y' or another == 'yes':
+        return main()
     
     return 0
 
