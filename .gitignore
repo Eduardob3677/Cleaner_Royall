@@ -1,6 +1,7 @@
 # Premium activation generated files
 premium_activation/
 premium_forum_issues/
+issue_operations/
 
 # Python cache
 __pycache__/
