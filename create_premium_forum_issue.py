@@ -184,6 +184,7 @@ class PremiumForumIssueCreator:
                                    method: str = "paypal",
                                    contact: str = None,
                                    uid: str = None,
+                                   pid: str = None,
                                    comment: str = "") -> dict:
         """
         Create a Premium Forum activation issue
@@ -193,6 +194,7 @@ class PremiumForumIssueCreator:
             method: Payment method (default: "paypal")
             contact: Contact information (e.g., "@username")
             uid: Device UID (8-digit number), auto-generated if not provided
+            pid: PID token, auto-generated if not provided
             comment: Additional comment (optional)
         
         Returns:
@@ -208,7 +210,7 @@ class PremiumForumIssueCreator:
         
         # Generate encrypted tokens
         tnx_token = self.generate_tnx_token()
-        pid_token = self.generate_pid_token()
+        pid_token = pid if pid else self.generate_pid_token()
         
         # Create issue body with exact structure
         issue_body_data = {
@@ -308,6 +310,45 @@ class PremiumForumIssueCreator:
             json.dump(full_data, f, indent=2)
         
         print(f"[✓] Issue data saved to: {issue_file}")
+    
+    def close_issue(self, issue_number: int) -> bool:
+        """
+        Close a GitHub issue
+        
+        Args:
+            issue_number: The issue number to close
+        
+        Returns:
+            bool: True if successful, False otherwise
+        """
+        print(f"\n[*] Closing issue #{issue_number}...")
+        
+        url = f"https://api.github.com/repos/{DEFAULT_OWNER}/{DEFAULT_REPO}/issues/{issue_number}"
+        
+        headers = {
+            "Authorization": f"Bearer {self.installation_token}",
+            "Accept": "application/vnd.github+json",
+            "Content-Type": "application/json"
+        }
+        
+        data = {
+            "state": "closed"
+        }
+        
+        try:
+            response = requests.patch(url, headers=headers, json=data, timeout=15)
+            
+            if response.status_code == 200:
+                print(f"[✓] Issue #{issue_number} closed successfully!")
+                return True
+            else:
+                print(f"[✗] Failed to close issue: {response.status_code}")
+                print(f"    Response: {response.text}")
+                return False
+                
+        except Exception as e:
+            print(f"[ERROR] Failed to close issue: {e}")
+            return False
 
 
 def get_user_input():
@@ -397,25 +438,21 @@ def main():
     # Create issue creator
     creator = PremiumForumIssueCreator()
     
-    # Get user input
-    user_data = get_user_input()
+    # Use hardcoded values as specified
+    forum_id = "02803"
+    uid = "19790895"
+    pid = "9ERw90Pu2So6TP3sR8Pl6A=="
+    method = "paypal"
+    contact = None  # Will be auto-generated
+    comment = ""
     
-    # Confirm before creating
     print("\n" + "="*60)
-    print("CONFIRMATION")
+    print("USING HARDCODED VALUES")
     print("="*60)
-    print("\nYou are about to create a GitHub issue with the following data:")
-    print(f"  Forum ID: {user_data['forum_id'] or 'Auto-generated'}")
-    print(f"  Method: {user_data['method']}")
-    print(f"  Contact: {user_data['contact'] or 'Auto-generated'}")
-    print(f"  UID: {user_data['uid'] or 'Auto-generated'}")
-    print(f"  Comment: {user_data['comment'] or '(empty)'}")
-    
-    confirm = input("\nCreate issue? (y/n) [y]: ").strip().lower()
-    
-    if confirm and confirm != 'y' and confirm != 'yes':
-        print("\n❌ Issue creation cancelled by user.")
-        return 0
+    print(f"  Forum ID: {forum_id}")
+    print(f"  UID: {uid}")
+    print(f"  PID: {pid}")
+    print(f"  Method: {method}")
     
     # Create the issue
     print("\n" + "="*60)
@@ -423,11 +460,12 @@ def main():
     print("="*60)
     
     issue = creator.create_premium_forum_issue(
-        forum_id=user_data['forum_id'],
-        method=user_data['method'],
-        contact=user_data['contact'],
-        uid=user_data['uid'],
-        comment=user_data['comment']
+        forum_id=forum_id,
+        method=method,
+        contact=contact,
+        uid=uid,
+        pid=pid,
+        comment=comment
     )
     
     if issue:
@@ -438,19 +476,27 @@ def main():
         print(f"Title: {issue['title']}")
         print(f"URL: {issue['html_url']}")
         print(f"\nLocal data saved in: premium_forum_issues/")
+        
+        # Close the issue after creation
+        print("\n" + "="*60)
+        print("CLOSING ISSUE")
+        print("="*60)
+        
+        if creator.close_issue(issue['number']):
+            print("\n" + "="*60)
+            print("✅ ISSUE CLOSED SUCCESSFULLY!")
+            print("="*60)
+        else:
+            print("\n" + "="*60)
+            print("⚠️  WARNING: Issue created but failed to close")
+            print("="*60)
+            return 1
     else:
         print("\n" + "="*60)
         print("❌ FAILED")
         print("="*60)
         print("\nFailed to create issue. Please check the error messages above.")
         return 1
-    
-    # Ask if user wants to create another issue
-    print("\n" + "="*60)
-    another = input("\nCreate another issue? (y/n) [n]: ").strip().lower()
-    
-    if another == 'y' or another == 'yes':
-        return main()
     
     return 0
 
