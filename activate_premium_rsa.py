@@ -19,6 +19,9 @@ import json
 import base64
 import hashlib
 import random
+import argparse
+import re
+from typing import Optional
 from pathlib import Path
 from datetime import datetime, timedelta
 
@@ -37,6 +40,8 @@ except ImportError:
 PREMIUM_KEY = "Araaf@Royall$1211"
 SECONDARY_KEY = " Cleaner@Royall#6278 "
 STRING_MAKER_KEY = "AraafRoyall@1211"
+
+UID_PATTERN = re.compile(r"^[1-9]\d{7}$")
 
 # RSA Private Key (from decrypted assets/BotsApi/Github/IssueAPI.txt)
 RSA_PRIVATE_KEY = """-----BEGIN RSA PRIVATE KEY-----
@@ -83,8 +88,11 @@ class PremiumActivator:
         Matches the format from assets/Premium/uidGenerator.txt
         """
         # Generate random 8-digit number (10000000 - 99999999)
-        uid = (random.randint(1000, 9999) * 10000 + random.randint(0, 9999))
-        return str(uid).zfill(8)
+        while True:
+            uid = (random.randint(1000, 9999) * 10000 + random.randint(0, 9999))
+            uid_str = str(uid).zfill(8)
+            if UID_PATTERN.match(uid_str):
+                return uid_str
     
     def derive_aes_key(self, password: str) -> bytes:
         """Derive AES key using SHA-256"""
@@ -149,18 +157,23 @@ class PremiumActivator:
         
         return activation_data
     
-    def generate_premium_files(self, output_dir: str = "premium_activation"):
+    def generate_premium_files(self, output_dir: str = "premium_activation", uid: Optional[str] = None):
         """
         Generate all premium activation files
         These files should be pushed to device at /data/importer/data/
         """
         output_path = Path(output_dir)
         output_path.mkdir(exist_ok=True)
-        
         print(f"\n[*] Generating premium activation files in: {output_path.absolute()}")
         
-        # Generate UID
-        self.device_uid = self.generate_uid()
+        # Generate UID with clear precedence:
+        # 1) Use CLI-provided UID
+        # 2) Reuse existing UID if set
+        # 3) Auto-generate a new UID
+        if uid is not None:
+            self.device_uid = uid
+        elif not self.device_uid:
+            self.device_uid = self.generate_uid()
         print(f"[+] Device UID: {self.device_uid}")
         
         # 1. Create code.txt (UID file)
@@ -409,6 +422,28 @@ For support, refer to the project documentation.
             return False
 
 
+def validate_uid(value: str) -> str:
+    """Validate UID input for CLI parsing"""
+    value = value.strip()
+    if not UID_PATTERN.match(value):
+        raise argparse.ArgumentTypeError("UID must be an 8-digit numeric value that does not start with 0.")
+    return value
+
+
+def parse_cli_args():
+    """Parse CLI arguments"""
+    parser = argparse.ArgumentParser(
+        description="Generate Cleaner Royall premium activation files."
+    )
+    parser.add_argument(
+        "-u",
+        "--uid",
+        type=validate_uid,
+        help="Custom 8-digit device UID (defaults to auto-generated if omitted)."
+    )
+    return parser.parse_args()
+
+
 def main():
     """Main function"""
     print("""
@@ -426,9 +461,15 @@ def main():
     # Create activator instance
     activator = PremiumActivator()
     
+    # Optional UID customization via CLI
+    args = parse_cli_args()
+    custom_uid = args.uid
+    if custom_uid:
+        print(f"[*] Using custom UID: {custom_uid}")
+    
     # Generate premium activation files
     try:
-        activation_token = activator.generate_premium_files()
+        activation_token = activator.generate_premium_files(uid=custom_uid)
         
         # Verify signature (for demonstration)
         print("\n[*] Verifying RSA signature...")
