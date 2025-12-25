@@ -1,0 +1,16 @@
+mount -o remount,rw /data >/dev/null 2>&1
+
+DIR="/data/CleanerRoyall/cc"
+
+if [ ! -d $DIR ]; then
+  if ! { mkdir -p $DIR || install -d $DIR; }; then
+    echo "Failed to create directory"
+    araafroyall
+    exit 1
+  fi
+fi
+
+for file in main.txt slot1.txt slot2.txt slot3.txt; do
+  [ ! -f "$DIR/$file" ] && echo "/data/local/tmp/X" >> "$DIR/$file"
+done
+

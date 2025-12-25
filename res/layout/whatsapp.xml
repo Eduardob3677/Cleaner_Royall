@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/vscroll1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/linear1" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/header" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="10.0dp">
+                <ImageView android:layout_gravity="center" android:id="@id/imageview2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/header" android:scaleType="center" />
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/headL" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝐀 𝐅𝐮𝐥𝐥 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐝 + 𝐄𝐧𝐡𝐚𝐧𝐜𝐞𝐝 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐂𝐥𝐞𝐚𝐧𝐞𝐫" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview70" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="20.0dp" android:text="⚠️ This Feature may not work properly if you have 2 accounts on same Whatsapp (will be fixed soon)" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear41" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp">
+                <LinearLayout android:orientation="vertical" android:id="@id/linear67" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5.0dp" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear68" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/imageview24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/picture" android:scaleType="center" />
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/textview33" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Images" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/linear69" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/linear70" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#000000" android:layout_gravity="center" android:id="@id/image" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  " />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/linear71" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="12.0sp" android:textColor="#000000" android:layout_gravity="center" android:id="@id/textview35" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" ⚡Clean " />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/linear47" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5.0dp" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear50" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/imageview21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/flip_1" android:scaleType="center" />
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/textview21" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Videos" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/linear51" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/linear55" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/vdo" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  " />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/linear56" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="12.0sp" android:textColor="#000000" android:layout_gravity="center" android:id="@id/textview26" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" ⚡Clean " />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear89" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/linear90" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5.0dp" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear96" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/imageview30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eraser" android:scaleType="center" />
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/textview50" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Documents" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/linear97" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/linear98" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/doc" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  " />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/linear99" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="12.0sp" android:textColor="#000000" android:layout_gravity="center" android:id="@id/textview52" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" ⚡Clean " />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/linear91" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5.0dp" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear92" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/imageview29" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/flip_2" android:scaleType="center" />
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/textview47" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Audios" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/linear93" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/linear94" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/audio" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  " />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/linear95" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="12.0sp" android:textColor="#000000" android:layout_gravity="center" android:id="@id/textview49" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" ⚡Clean " />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear24" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear6" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview7" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=".shared Cleaner" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear9" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:enabled="false" android:id="@id/imageview6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview6" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=".Trash" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear28" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear8" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:enabled="false" android:id="@id/imageview10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview10" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thumbnails" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear7" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview11" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Backups" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear29" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear30" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:enabled="false" android:id="@id/imageview12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview12" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Stickers Thumbnails" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear31" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview13" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Stickers" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear32" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear33" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:enabled="false" android:id="@id/imageview14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview14" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Databases *" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear34" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview15" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Profile Photos" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear35" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear36" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:enabled="false" android:id="@id/imageview16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview16" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Links" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear37" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview17" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Statuses" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear38" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear39" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:enabled="false" android:id="@id/imageview18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview18" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Video Notes" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear40" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview19" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview19" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Voice Notes" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear100" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear101" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:enabled="false" android:id="@id/imageview31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview53" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WallPaper" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear102" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview32" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview55" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gifs" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear103" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/textview61" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text=" 𝗔𝗱𝗱𝗶𝘁𝗶𝗼𝗻𝗮𝗹 𝗖𝗹𝗲𝗮𝗻𝗲𝗿 - Add-Ons" />
+                <ImageView android:layout_gravity="center" android:id="@id/imageview33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:src="@drawable/question" android:scaleType="center" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear104" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear105" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:enabled="false" android:id="@id/imageview34" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview62" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trash &amp; Cache" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear106" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview35" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview63" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gifs &amp; Stickers" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear107" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear108" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:enabled="false" android:id="@id/imageview36" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview64" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Images &amp; Videos" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear109" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview37" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview65" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Shared &amp; ViewOnce" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear110" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear111" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:enabled="false" android:id="@id/imageview38" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview66" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Network Resources" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear112" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview39" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview67" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Logs &amp; Thumbnails" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear113" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear114" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:enabled="false" android:id="@id/imageview40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview68" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Avatars" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear115" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview41" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview69" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Split Status" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/andata" android:background="#e0f7fa" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="5.0dp">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear48" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView android:layout_gravity="center_vertical" android:id="@id/circleimageview6" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/brake" app:civ_border_color="#008dcd" app:civ_border_overlay="true" app:civ_border_width="3.0dp" app:civ_circle_background_color="#ffffff" />
+                    <TextView android:textSize="16.0sp" android:textColor="#f44336" android:layout_gravity="center" android:id="@id/textview60" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$INT/Android/data/com.whatsapp" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear49" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@id/textview36" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="size" android:layout_weight="1.0" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear52" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/Clean" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" ⚡Clean " />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="10.0sp" android:textColor="#000000" android:id="@id/result" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

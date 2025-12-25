@@ -1,0 +1,5 @@
+-repackageclasses
+-ignorewarnings
+-dontwarn
+-dontnote
+-keep class Cleaner.Royall.MainHook { *; }

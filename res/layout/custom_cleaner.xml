@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/vscroll1" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/linear1" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="2.0dp">
+            <LinearLayout android:orientation="horizontal" android:id="@id/TopLayout" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear17" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selinx" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@id/textview12" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗦𝗘 𝗟𝗶𝗻𝘂𝘅" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear18" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ovum" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:gravity="center" android:id="@id/textview13" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝐌𝐨𝐮𝐧𝐭 𝐝𝐚𝐭𝐚" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear19" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/service" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@id/textview14" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝐅𝐢𝐱 𝐭𝐦𝐩*" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear20" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/molecul" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview16" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝐅𝐢𝐱 𝐎𝐛𝐛" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="20.0sp" android:textColor="#000000" android:id="@id/textview4" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="𝗦𝗼𝗰𝗶𝗮𝗹 𝗠𝗲𝗱𝗶𝗮" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear25" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/bt2" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:enabled="false" android:id="@id/imageview17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/whatsapp_1" android:scaleType="center" />
+                    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview18" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WhatsApp Cleaner" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/bt3" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tgg" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview19" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Telegram Cleaner" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear24" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/bt1" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:enabled="false" android:id="@id/imageview6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/social_5" android:scaleType="center" />
+                    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview6" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Facebook Cleaner" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/bt4" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/social_6" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview20" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Instagram Cleaner" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear100" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear101" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:enabled="false" android:id="@id/imageview31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/social_4" android:scaleType="center" />
+                    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview53" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Snapchat Cleaner" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear102" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview32" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/social_3" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview55" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Twitter (X) Cleaner" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/textview21" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fixes &amp; Additionals" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear42" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:id="@id/brmtrx" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="2.0dp" android:text=" Browser Metrics" />
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:id="@id/appclean" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="2.0dp" android:text=" Apps Data Cleaner" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear103" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:id="@id/workp" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="2.0dp" android:text=" Delete Work Profile" />
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:id="@id/bgmi" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="2.0dp" android:text=" BGMI Toolbox" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear104" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:id="@id/cpart" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="2.0dp" android:text=" Partition Wiper" />
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:id="@id/textview45" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="2.0dp" android:text=" Dalvik Cache Manager" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

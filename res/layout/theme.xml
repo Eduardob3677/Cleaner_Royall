@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/header" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="10.0dp">
+        <ImageView android:layout_gravity="center" android:id="@id/imageview2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/header" android:scaleType="center" />
+        <TextView android:textSize="14.0sp" android:textColor="#000000" android:id="@id/headL" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝐂𝐮𝐬𝐭𝐨𝐦𝐢𝐳𝐞 𝐓𝐡𝐞 𝐔𝐈 , 𝐰𝐢𝐭𝐡 𝐰𝐡𝐚𝐭𝐞𝐯𝐞𝐫 𝐲𝐨𝐮 𝐋𝐢𝐤𝐞" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear24" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+        <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/samplebt2" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+            <ImageView android:enabled="false" android:id="@id/imageview6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/check" android:scaleType="center" />
+            <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview6" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗦𝗮𝗺𝗽𝗹𝗲 𝗕𝘂𝘁𝘁𝗼𝗻" />
+        </LinearLayout>
+        <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/samplebt" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+            <ImageView android:id="@id/imageview7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/check" android:scaleType="center" />
+            <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview7" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗦𝗮𝗺𝗽𝗹𝗲 𝗕𝘂𝘁𝘁𝗼𝗻" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:id="@id/vscroll1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/linear25" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview9" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🖌️ 𝐒𝐞𝐥𝐞𝐜𝐭 𝐌𝐚𝐢𝐧 𝐓𝐡𝐞𝐦𝐞" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear28" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview11" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dp" android:text="Default" />
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview13" android:background="#e3f2fd" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dp" android:text="        " />
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview14" android:background="#e8eaf6" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dp" android:text="        " />
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview15" android:background="#ede7f6" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dp" android:text="        " />
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview16" android:background="#f3e5f5" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dp" android:text="        " />
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview17" android:background="#fce4ec" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dp" android:text="        " />
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview18" android:background="#ffebee" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dp" android:text="        " />
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview19" android:background="#ffffff" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dp" android:text="        " />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear29" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview20" android:background="#fbe9e7" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dp" android:text="        " />
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview21" android:background="#fff3e0" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dp" android:text="        " />
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview22" android:background="#fffde7" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dp" android:text="        " />
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview23" android:background="#f9fbe7" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dp" android:text="        " />
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview24" android:background="#f1f8e9" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dp" android:text="        " />
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview25" android:background="#e0f2f1" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dp" android:text="        " />
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview26" android:background="#e0f7fa" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dp" android:text="        " />
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview27" android:background="#e1f5fe" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dp" android:text="        " />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear34" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:id="@id/textview53" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗖𝘂𝘀𝘁𝗼𝗺 𝗖𝗼𝗹𝗼𝗿 : " />
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview54" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\#-" />
+                <EditText android:textSize="12.0sp" android:textColor="#000000" android:textColorHint="#607d8b" android:id="@id/html" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="html code" />
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/save" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:layout_marginRight="2.0dp" android:text=" Save " />
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/colors" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text=" Colors Codes" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear30" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview28" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗖𝗼𝗿𝗻𝗲𝗿 𝗥𝗮𝗱𝗶𝘂𝘀" />
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/rds" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Default" />
+                <SeekBar android:id="@id/seekbar1" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="50" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/cpicker" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

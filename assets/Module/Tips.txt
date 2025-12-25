@@ -1,0 +1,16 @@
+This can clean automatically at every selected time interval.
+Select Cleaning patches to make them clean automatically.
+Now you can start module funtion at boot without enabling manually everytime.
+It can clean Dalvik cache after 3 min of boot to prevent errors (If Enabled).
+This is the Most powerfull Cleaning Magisk or KernalSU module.
+Please Don't use enable disable multiple times at once , this can cause multiple script running.
+Any changes to module will be effective from next interval or cleaning cycle.
+1 or 3 hour cleaning cycle is Recommended.
+Disabling from Magisk or kernalSU Manager can also disable & stop The module from cleaning.
+For Uninstall - Please disable first & wait for 'stop or disable at next cycle' otherwise it will stop at next boot.
+Regularly Check notification or logs & Module status to avoid issues.
+Module is now stable still may have bugs.
+Battery or memory saver may kill the script from being running, so check Regularly.
+Check logs or Actions or Notification regulary to know if module was killed by Android system or not.
+Online Patches are updates Regularly, Keep checking them weekly.
+You can Remove Downloaded patch from Patch Manager

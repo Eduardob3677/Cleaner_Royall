@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListView android:id="@id/listview1" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="400.0dp" android:choiceMode="none" />
+    <HorizontalScrollView android:id="@id/laytt" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/linear1" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/coppy" android:padding="3.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 📃Copy To Clipboard " />
+            <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/cleanall" android:padding="3.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:text=" ⚡ Clean All " />
+            <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/undo" android:padding="3.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:text=" 🔧 Undo Last Remove " />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

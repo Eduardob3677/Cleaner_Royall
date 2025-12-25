@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/header" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="10.0dp">
+        <ImageView android:layout_gravity="center" android:id="@id/imageview2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/header" android:scaleType="center" />
+        <TextView android:textSize="14.0sp" android:textColor="#000000" android:id="@id/headL" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗙𝗲𝘁𝗰𝗵𝗲𝘀 𝘁𝗵𝗲 𝗟𝗮𝘁𝗲𝘀𝘁 &amp; 𝗨𝗽𝗱𝗮𝘁𝗲𝗱 𝗖𝗹𝗲𝗮𝗻𝗶𝗻𝗴 𝗣𝗮𝘁𝗰𝗵𝗲𝘀 𝗳𝗿𝗼𝗺 𝘁𝗵𝗲 𝘀𝗲𝗿𝘃𝗲𝗿/𝗴𝗶𝘁𝗵𝘂𝗯 𝗮𝗻𝗱 𝗣𝗲𝗿𝗳𝗼𝗿𝗺 𝗖𝗹𝗲𝗮𝗻𝗶𝗻𝗴" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/textview1" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="20.0dp" android:text="Select an item for Cleaning" />
+    <ScrollView android:id="@id/vscroll1" android:layout_width="match_parent" android:layout_height="350.0dp" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp">
+        <HorizontalScrollView android:id="@id/hscroll2" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioGroup android:orientation="vertical" android:id="@id/radiogroup2" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5.0dp">
+                <RadioButton android:textSize="12.0sp" android:textColor="#000000" android:id="@id/radiobutton5" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cache Cleaner" />
+                <RadioButton android:textSize="12.0sp" android:textColor="#000000" android:id="@id/radiobutton6" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cache Cleaner Enhanced" />
+                <RadioButton android:textSize="12.0sp" android:textColor="#000000" android:id="@id/radiobutton13" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Logs Cleaner" />
+                <RadioButton android:textSize="12.0sp" android:textColor="#000000" android:id="@id/radiobutton12" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Logs Cleaner Enhanced" />
+                <RadioButton android:textSize="12.0sp" android:textColor="#000000" android:id="@id/radiobutton10" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cache Wiper API" />
+                <RadioButton android:textSize="12.0sp" android:textColor="#000000" android:id="@id/radiobutton11" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trash Cleaner" />
+                <RadioButton android:textSize="12.0sp" android:textColor="#000000" android:id="@id/radiobutton9" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$INT Storage Cleaner" />
+                <RadioButton android:textSize="12.0sp" android:textColor="#000000" android:id="@id/radiobutton8" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Multi-User $INT Storage Cleaner" />
+                <RadioButton android:textSize="12.0sp" android:textColor="#000000" android:id="@id/radiobutton14" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝑫𝒂𝒊𝒍𝒚 𝑪𝒍𝒆𝒂𝒏𝒆𝒓" />
+            </RadioGroup>
+        </HorizontalScrollView>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear7" android:paddingLeft="25.0dp" android:paddingRight="25.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="2.0dp">
+        <TextView android:textSize="12.0sp" android:textColor="#000000" android:gravity="center" android:id="@id/empty" android:background="#b2dfdb" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="1.0dp" android:text="Empty Button" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="#000000" android:gravity="center" android:id="@id/clean" android:background="#b2dfdb" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="5.0dp" android:layout_marginTop="2.0dp" android:layout_marginBottom="1.0dp" android:text=" 𝗙𝗲𝘁𝗰𝗵 &amp; 𝗖𝗹𝗲𝗮𝗻" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

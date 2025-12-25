@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/vscroll1" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/linear1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="2.0dp">
+            <LinearLayout android:orientation="horizontal" android:id="@id/finalPremium" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/vrfyprchs" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="3.0dp" android:src="@drawable/verified_1" android:scaleType="fitCenter" />
+                <HorizontalScrollView android:id="@id/hscroll2" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffff" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/output" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Congratulations... Premium is Activated" />
+                </HorizontalScrollView>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/PurchaseCode" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffff00" android:id="@id/codetxt" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="User ID : " />
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffff" android:id="@id/code" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="GettingCode" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/StringCode" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffff00" android:gravity="center" android:layout_gravity="center" android:id="@id/codetext2" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="String : " />
+                <HorizontalScrollView android:id="@id/hscroll3" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/stringg" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GettingCode" />
+                </HorizontalScrollView>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/pidlay" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffff00" android:gravity="center" android:layout_gravity="center" android:id="@id/textview3" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="Premium Id : " />
+                <HorizontalScrollView android:id="@id/hscroll4" android:layout_width="220.0dp" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/pidtxt" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="GettingCode" />
+                </HorizontalScrollView>
+            </LinearLayout>
+            <TextView android:textSize="10.0sp" android:textColor="#ffffff" android:id="@id/notice" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="Please keep your Premium Id for further Assistance" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear13" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="2.0dp">
+                <TextView android:textSize="12.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/pfeature" android:background="#4caf50" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="1.0dp" android:text="Premium Features" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/prmfrm" android:background="#4caf50" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="5.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="1.0dp" android:text="𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗙𝗼𝗿𝘂𝗺" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear14" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:layout_marginBottom="2.0dp" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffffff" android:id="@id/hint" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:text="Q = How to Get Premium ?\n\nA = Make Payment \n       Submit Premium Forum\n       Get Permanent Premium Access" />
+            <Button android:textSize="25.0sp" android:textColor="#ffffff" android:id="@id/purchase" android:background="#f48fb1" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="60.0dp" android:layout_marginTop="80.0dp" android:layout_marginRight="60.0dp" android:text=" 𝗣𝘂𝗿𝗰𝗵𝗮𝘀𝗲 𝗣𝗿𝗲𝗺𝗶𝘂𝗺" />
+            <Button android:textSize="25.0sp" android:textColor="#ffffff" android:id="@id/codeactivator" android:background="#f48fb1" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="60.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="60.0dp" android:text="𝗔𝗰𝘁𝗶𝘃𝗮𝘁𝗲 𝗣𝗿𝗲𝗺𝗶𝘂𝗺" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

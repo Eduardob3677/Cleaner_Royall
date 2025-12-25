@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/vscroll1" android:layout_width="match_parent" android:layout_height="450.0dp">
+        <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/chngl" android:padding="8.0dp" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TextView" />
+    </ScrollView>
+    <HorizontalScrollView android:id="@id/hscroll1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp">
+            <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/rln" android:background="#fff59d" android:padding="3.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dp" android:text="Server Notes" />
+            <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/oldc" android:background="#ccff90" android:padding="3.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginRight="3.0dp" android:text="old Changelog" />
+            <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/upc" android:background="#c6ff00" android:padding="3.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginRight="3.0dp" android:text="Upcoming Features" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <HorizontalScrollView android:id="@id/liner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/line2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp">
+            <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/bt1" android:background="#ccff90" android:padding="3.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dp" android:text="bt1" />
+            <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/bt2" android:background="#ccff90" android:padding="3.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginRight="3.0dp" android:text="bt2" />
+            <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/bt3" android:background="#ccff90" android:padding="3.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginRight="3.0dp" android:text="bt3" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

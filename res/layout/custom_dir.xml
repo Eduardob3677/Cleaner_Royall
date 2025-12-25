@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/vscroll1" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/linear3" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/header" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="10.0dp">
+                <ImageView android:layout_gravity="center" android:id="@id/imageview2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/header" android:scaleType="center" />
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:id="@id/headL" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝐂𝐮𝐬𝐭𝐨𝐦 𝐂𝐥𝐞𝐚𝐧𝐞𝐫 𝐇𝐞𝐥𝐩 𝐲𝐨𝐮 𝐭𝐨 𝐑𝐞𝐦𝐨𝐯𝐞 𝐔𝐧𝐰𝐚𝐧𝐭𝐞𝐝 𝐅𝐢𝐥𝐞𝐬, 𝑭𝒐𝒍𝒅𝒆𝒓𝒔 &amp; 𝐃𝐢𝐫𝐞𝐜𝐭𝐨𝐫𝐢𝐞𝐬 𝐰𝐢𝐭𝐡 𝐲𝐨𝐮𝐫 𝐨𝐰𝐧 𝐑𝐮𝐥𝐞" />
+            </LinearLayout>
+            <TextView android:textSize="11.0sp" android:textColor="#000000" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/info" android:background="#f9fbe7" android:padding="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="8.0dp" android:text="..............................................................................................................................................................." android:lines="2" />
+            <HorizontalScrollView android:id="@id/hscroll3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear4" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="50.0dp">
+                    <Switch android:textSize="14.0sp" android:textStyle="bold" android:textColor="#000000" android:layout_gravity="center" android:id="@id/cust_enable" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="🔰 Advance Mode" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:layout_gravity="center" android:id="@id/backup0" android:background="#ffcdd2" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:text=" Backup " />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:layout_gravity="center" android:id="@id/restore0" android:background="#ffcdd2" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dp" android:text=" Restore " />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:layout_gravity="center" android:id="@id/Help" android:background="#ccff90" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text=" ❓ Help " />
+                </LinearLayout>
+            </HorizontalScrollView>
+            <LinearLayout android:orientation="vertical" android:id="@id/box" android:background="#fffde7" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="10.0dp">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear8" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginTop="2.0dp">
+                    <HorizontalScrollView android:id="@id/hscroll7" android:layout_width="270.0dp" android:layout_height="match_parent">
+                        <EditText android:textSize="14.0sp" android:textColor="#000000" android:textColorHint="#607d8b" android:gravity="fill_vertical" android:id="@id/customdirrr" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="PasteDirectory Here (1 by 1) ‎ ‎ ‎ ‎ ‎  ‎ ‎ ‎  ‎ ‎ ‎ ‎ ‎ ‎" android:singleLine="true" />
+                    </HorizontalScrollView>
+                    <ImageView android:id="@id/paste" android:layout_width="23.0dp" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:layout_marginRight="3.0dp" android:src="@drawable/task_1" android:scaleType="fitCenter" />
+                    <ImageView android:id="@id/adder" android:layout_width="35.0dp" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_marginRight="3.0dp" android:src="@drawable/flash" android:scaleType="fitCenter" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="#ff1744" android:id="@id/error" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TextView" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/layooo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="2.0dp">
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:gravity="center" android:id="@id/textview1" android:background="#b9f6ca" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="5.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="1.0dp" android:text="+ 𝗔𝗱𝗱" android:layout_weight="1.0" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:gravity="center" android:id="@id/online" android:background="#b9f6ca" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="5.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="1.0dp" android:text="  Online Templates" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear10" android:padding="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="5.0dp">
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:layout_gravity="center" android:id="@id/dirmanegr" android:background="#ccff90" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text=" 🔧 Directory Manager " />
+            </LinearLayout>
+            <ScrollView android:id="@id/vscroll3" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10.0dp">
+                <LinearLayout android:orientation="vertical" android:id="@id/linear9" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#6200ea" android:id="@id/template" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="4.0dp" android:text="𝑻𝒆𝒎𝒑𝒍𝒂𝒕𝒆𝒔 : [$INT Folders]" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/linear11" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <CheckBox android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/tmp" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="/data/local/tmp/X" />
+                        <CheckBox android:textSize="12.0sp" android:textColor="#000000" android:id="@id/documentsn" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Documents" />
+                        <CheckBox android:textSize="12.0sp" android:textColor="#000000" android:id="@id/notificaton" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Notifications" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/linear12" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <CheckBox android:textSize="12.0sp" android:textColor="#000000" android:id="@id/music" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Music" />
+                        <CheckBox android:textSize="12.0sp" android:textColor="#000000" android:id="@id/movies" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Movies" />
+                        <CheckBox android:textSize="12.0sp" android:textColor="#000000" android:id="@id/alarm" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Alarms" />
+                        <CheckBox android:textSize="12.0sp" android:textColor="#000000" android:id="@id/subtitle" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Subtitles" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/linear13" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <CheckBox android:textSize="12.0sp" android:textColor="#000000" android:id="@id/ramdump" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ramdump" />
+                        <CheckBox android:textSize="12.0sp" android:textColor="#000000" android:id="@id/audiobooks" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AudioBooks" />
+                        <CheckBox android:textSize="12.0sp" android:textColor="#000000" android:id="@id/ringtone" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ringtones" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/linear14" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <CheckBox android:textSize="12.0sp" android:textColor="#000000" android:id="@id/miuiGallerydlt" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MiUi Gallery Deleted Items (old)" />
+                        <CheckBox android:textSize="12.0sp" android:textColor="#000000" android:id="@id/browser" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="browser Folder [MiUi]" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/linear16" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <CheckBox android:textSize="12.0sp" android:textColor="#000000" android:id="@id/miuigallerydltnew" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MiUi Gallery Deleted Items (new)" />
+                    </LinearLayout>
+                    <ScrollView android:id="@id/vscroll4" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/result" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                    </ScrollView>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

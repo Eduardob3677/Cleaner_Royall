@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/vscroll1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/linear1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="2.0dp">
+            <LinearLayout android:orientation="horizontal" android:id="@id/TopLayout" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear17" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/batteryy" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@id/textview12" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗖𝗮𝗹𝗶𝗯𝗿𝗮𝘁𝗼𝗿" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear18" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/toolbox" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:gravity="center" android:id="@id/textview13" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝐓𝐨𝐨𝐥 𝐁𝐨𝐱" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear19" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fstrm" android:scaleType="center" />
+                    <TextView android:textSize="11.0sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@id/textview14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗦𝘆𝘀𝘁𝗲𝗺𝗹𝗲𝘀𝘀\n𝗠𝗼𝗱𝘂𝗹𝗲" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear20" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/storage" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview16" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗦𝘁𝗼𝗿𝗮𝗴𝗲" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear35" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/linear36" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/imageview25" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dna" android:scaleType="center" />
+                    <TextView android:textSize="11.0sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@id/textview28" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗫𝗽𝗼𝘀𝗲𝗱\n𝗠𝗼𝗱𝘂𝗹𝗲" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/linear37" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/imageview26" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/optm" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:gravity="center" android:id="@id/textview29" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗢𝗻𝗹𝗶𝗻𝗲 𝗠𝗼𝗱𝗲" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear38" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dyncell" android:scaleType="center" />
+                    <TextView android:textSize="11.0sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@id/textview30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗗𝘆𝗻𝗮𝗺𝗶𝗰\n𝗦𝗵𝗲𝗹𝗹" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear39" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview28" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ramma" android:scaleType="center" />
+                    <TextView android:textSize="11.0sp" android:textColor="#000000" android:gravity="center" android:id="@id/textview31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗥𝗔𝗠\n𝗕𝗼𝗼𝘀𝘁𝗲𝗿" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="#d500f9" android:gravity="center" android:id="@id/textview18" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="𝑰𝒕 𝒊𝒔 𝑩𝒆𝒔𝒕 𝒕𝒐 𝒄𝒍𝒆𝒂𝒏 𝑹𝒆𝒈𝒖𝒍𝒂𝒓𝒍𝒚" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear21" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear22" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:enabled="false" android:id="@id/imageview4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/diac" android:scaleType="center" />
+                    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview4" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝐃𝐚𝐥𝐯𝐢𝐤 𝐂𝐚𝐜𝐡𝐞" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/wiperap" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/transfer" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview5" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝐂𝐚𝐜𝐡𝐞 𝐖𝐢𝐩𝐞𝐫 𝐀𝐏𝐈" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear24" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/LogCleanbt" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:enabled="false" android:id="@id/imageview6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/socket" android:scaleType="center" />
+                    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview6" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗟𝗼𝗴𝘀 𝐂𝐥𝐞𝐚𝐧𝐞𝐫" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/EmptyFolderBt" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folderr" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview7" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗘𝗺𝗽𝘁𝘆 𝗙𝗼𝗹𝗱𝗲𝗿" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/cachetrimbt" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:enabled="false" android:id="@id/imageview8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/waste_1" android:scaleType="center" />
+                    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview8" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗖𝗮𝗰𝗵𝗲 𝐂𝐥𝐞𝐚𝐧𝐞𝐫" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/oatbt" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/connection" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview9" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗼𝗮𝘁 &amp; 𝗱𝗲𝘅 𝐂𝐥𝐞𝐚𝐧𝐞𝐫" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/internalbt" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:enabled="false" android:id="@id/imageview16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/packaging" android:scaleType="center" />
+                    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview19" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝙎𝙩𝙤𝙧𝙖𝙜𝙚 𝑪𝒍𝒆𝒂𝒏𝒆𝒓" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/workbt" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fstrim" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview20" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝐅𝐬𝐭𝐫𝐢𝐦" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear30" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear31" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:enabled="false" android:id="@id/imageview18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eco" android:scaleType="center" />
+                    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview21" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝐋𝐎𝐒𝐓.𝐃𝐈𝐑 𝐂𝐥𝐞𝐚𝐧𝐞𝐫" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/trashbt" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview19" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/trash" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview22" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗧𝗿𝗮𝘀𝗵 𝐂𝐥𝐞𝐚𝐧𝐞𝐫" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear32" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear11" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:enabled="false" android:id="@id/imageview20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gear_1" android:scaleType="center" />
+                    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview23" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝐎𝐧𝐞𝐓𝐚𝐩 𝐂𝐥𝐞𝐚𝐧𝐞𝐫" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear33" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nerve" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview24" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗠𝗶𝗻𝗶 𝗖𝗹𝗲𝗮𝗻𝗲𝗿" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear34" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear28" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:enabled="false" android:id="@id/imageview22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gear_3" android:scaleType="center" />
+                    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview25" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗦𝗺𝗮𝗿𝘁 𝗖𝗹𝗲𝗮𝗻𝗲𝗿" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear29" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/imageview23" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/molecule" android:scaleType="center" />
+                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview26" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝐂𝐮𝐬𝐭𝐨𝐦 𝐂𝐥𝐞𝐚𝐧𝐞𝐫" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/dailyclean" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="80.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="80.0dp" android:layout_marginBottom="10.0dp">
+                <ImageView android:id="@id/imageview24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/star" android:scaleType="center" />
+                <TextView android:textSize="16.0sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@id/textview27" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗗𝗮𝗶𝗹𝘆 𝗖𝗹𝗲𝗮𝗻𝗲𝗿" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear42" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:id="@id/change" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="2.0dp" android:text=" Changelog" />
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:id="@id/compatible" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="2.0dp" android:text=" Compatibility" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/setting" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="2.0dp" android:text=" Settings" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear47" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:id="@id/updateC" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="2.0dp" android:text=" Check Update" />
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:id="@id/feedb" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="2.0dp" android:text=" Feedback" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/prem" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="2.0dp" android:text=" Premium" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear48" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:id="@id/aboutapp" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="2.0dp" android:text=" About App" />
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:id="@id/website" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="2.0dp" android:text=" website" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

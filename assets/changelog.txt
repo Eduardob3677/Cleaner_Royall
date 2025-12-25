@@ -1,0 +1,147 @@
+Changelog v4.6
+   - This is Small Update with some bugs Fixed
+   - Stream Closed Error now show exact error output
+   - Increased maximum cleaning time to 30 seconds ( if exceed, try to clean remain waste again).
+   - Fix : Crash Report Sender
+   - Fix : Online Cleaner Premium Detection
+   - Fix : Dalvik Cache option from one tap
+   - Fix : Minor Text in Dynamic Action
+   - Fix : Minor Texts & Improvements
+
+Changelog v4.5
+   - Removed /data/resource-cache  , it was causing some issue on some devices
+   - Resource-Cache cleaner is now available in Dynamic Shell for those who still wants to use it.
+   - Please Re-enable Cache Cleaner option in Module section [Must]
+   - Fix : Crash Error in some devices 
+   
+Changelog v4.4
+   - New Feedback & Premium API + Mechanism
+   - Restructured Root Shell + Enhanced Functionality 
+   - Fix : Enhanced Cache Cleaner [ If you are using systemless module , please re-enable Cache cleaner option]
+   - Fix : ANR , App Not Responding Error , 
+   - Introducing Enhanced Logs Cleaner 
+       • Dev log Cleaner
+       • WLan log Cleaner
+       • Thermal Logs Cleaner
+   - What is Online Mode ? A = You can get updated Cleaning patches & directories on every usage 
+   - Logs , Cache , Wiper API, Temp Cleaners are now support Online Mode
+   - Fix : Music folder selector in Custom Cleaner 
+   - Resource-Cache in /data is now cleanable in Cache Cleaner & Cache Wiper API with /dev/null
+   - Cache Wiper API - added - Resource Cache Cleaner (no output for it) , Pictures Thumbnails.
+   - Online Mode is place at Optimizer place , as Optimizer is not made yet , when optimizer will come i will place somewhere
+   - Fix : Exact Server Error
+   - Logs Cleaner is now free to use untill trial ends
+   - /storage/emulated/0/.picker_transcoded Cleaner in $INT cleaner + Multi$INT Cleaner
+   - $INT + $M-INT Cleaners now supports online mode
+   - Introducing Full Featured - Dynamic Shell & Actions
+   - Suspended Dynamic Action - As this is now integrated in Dynamic Shell
+   - Xposed version is now Stable - v82 (Legacy module to Stable)
+   - Fix : Smart Cleaner Package bug
+   - Suspended Migrate Option in Custom Cleaner
+   - Increased Trial Limit to 52 + 52 days
+   - some buttons Re-Styled 
+   - SE-Linux Help info button
+   - Direct Report submit for unexpected crash
+   - Fix : Oat size viewer on some non permissive devices
+   - Suspended .nomedia Cleaner (+ shifted to Dynamic shell if still any want to use.
+   - Fix : UiD generator on non permissive devices 
+   - Storage Usage - Remapped + it is now Stable
+   - Storage Usage - Now uses one root shell to calculate All sizes instead of multiple.
+   - Now it can run cleaning codes for upto 20 second without lag or crash, after 20 sec it will Exit the process(In such case you need to try again).
+   - Fix : MiniCleaner Storage calculation + Reduced Resource usage
+   - ReMapped Compatibility checker + Reduced Resource Usage 
+   - Compatibility checker now uses online mode automatically when internet connection is available
+   - BGMI Toolbox - Requested by user (you can also request your own Features)
+   - Fix : Custom Cleaner Restore - Invalid json problem
+   - now you can check All type of forum status directly from app
+   - Personal Action - Dynamic Action - An Action Allowed to specific users personally
+   - Due to large amount of work all upcoming remaining features are shifted for update v4.5
+   
+
+
+
+Changelog v4.3
+  - Fix Exact Error Output
+  - Fs-Trim All partitions 
+  - Fix Almost All Fs-Trim compatibility issues
+  - Now Auto Uses Busybox binaries from Magisk/KernalSU/APatch
+  - Fix : Minor bugs & improvements
+  - Fix oat cleaner for some devices
+  - Extra powered Cache Cleaner 
+  - Minor text Adjustments
+  - Fix cache cleaner lag issue in OneTap
+
+
+
+Changelog v4.2 + v4.1 + v4.0 + v3.9
+
+  - Fix Sign Problem
+  - SpeedUp Enhanced Cache Cleaner
+  - Fix Telegram group link in Premium Forum
+  - Fix The lag issue in Cache Trimmer
+  - All Cleaner option in custom cleaner Activity 
+  - Fix Minor bugs & Improvements 
+  - Auto cleaning Module version Updated to v2.5
+  - Initial RAM Booster Support
+  - Fix Xposed Related Problems 
+
+ Xposed Module Integration 
+  - Clears All types of Cache of Scoped Apps when they launch or started.
+  - Xposed Framework Initial Support
+  
+  
+
+Mini Update v3.8
+
+𝗙𝗶𝘅 : Id 12316, 20965, 85467 & 58876
+𝗙𝗶𝘅 : new payment method : Telegram stars
+𝗙𝗶𝘅 : suspended google play code payment due to country issue
+𝗙𝗶𝘅 : minor bugs & improvements
+
+
+Changelog v3.7
+🚀 : Full Java Codes Refactored
+🚀 : Enhanced Cache Trimmer
+🚀 : Easy Wiper API info help
+🚀 : Confimation in Template - Smart Cleaner
+🚀 : SpeedUp Compatibility Checker
+🚀 : Changelog UI Upgrade
+🚀 : Faster OneTap Option Get on Open
+🚀 : Fast & New Update Checker Mechanism
+🚀 : Update Checker - Update Changelog Provider 
+🚀 : Cache trim is now in free version instead logs cleaner
+🚀 : Online Premium & Trial Activator
+🚀 : New Module Dynamic & Stable Mechanism
+🚀 : Cache Partition now integrated in Cache Trimmer
+🚀 : Module Cleaner Patch Manager [offline]
+🚀 : "/data/system/graphicsstats" Integrated in Cache Trim
+🚀 : "/data/system/package_cache/*" Integrated in Cache Trim
+𝗙𝗶𝘅 : Proper Error Output
+𝗙𝗶𝘅 : Module - 30m not disabling on uninstall module
+𝗙𝗶𝘅 : Icons placements
+𝗙𝗶𝘅 : Feedback - Submissions viewer
+𝗙𝗶𝘅 : Text Spellings & Margins
+𝗙𝗶𝘅 : Bug id : 20965 [Refer to Tg Group]
+𝗙𝗶𝘅 : Many bugs & Improvements
+𝗙𝗶𝘅 : Telegram Group opener in Feedback Page
+𝗙𝗶𝘅 : Custom Cleaner Name or known bug fixed  
+𝗙𝗶𝘅 : All Theme issues & Theme Stability
+💬 : Reduced App Size.
+💬 : Removed useless java codes
+💬 : Fstrim Proper Instructions 
+💬 : Selectable Changelog
+💬 : Battery Calibrate Revert Status Direct visible
+💬 : Github Issues integrated in Feedback Page 
+💬 : Submit directory Integrated in Feedback Page
+💬 : New Feedback Forum (Json) Method
+💬 : Suspended update check using Telegram bot API
+💬 : Custom Cleaner Mechanism Upgraded
+💬 : Custom Cleaner Templates - Remapped
+💬 : Please use Migrate Option Once in Custom Cleaner to upgrade your pre-saved directories with v3.7
+💬 : Module & Custom Cleaner are now stable from beta.
+💬 : Some devices not shows proper size but supports Cleaning. if some options always showing 0KB than you may still need to clean them Regularly.
+💬 : New Forum Submitter API Key
+
+
+Online Templates may update regularly, check weekly. 
+-------------------------------------

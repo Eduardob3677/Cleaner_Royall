@@ -1,0 +1,4 @@
+
+rm -rf /data/app/*/*/oat
+rm -rf /data/app/*/oat
+

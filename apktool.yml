@@ -1,0 +1,42 @@
+version: 3.0.0-dirty
+apkFileName: app.apk
+usesFramework:
+  ids:
+  - 1
+  tag: dm2q
+sdkInfo:
+  minSdkVersion: 23
+  targetSdkVersion: 33
+versionInfo:
+  versionCode: 4
+  versionName: 4.6 AraafRoyall
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- png
+- assets/App/TnXkey.txt
+- assets/App/defaultKey.txt
+- assets/App/encrypt.key
+- assets/App/sites/ColorCodes.txt
+- assets/App/sites/PaymentsPortal.txt
+- assets/App/sites/feedback.txt
+- assets/App/sites/support.txt
+- assets/BotsApi/Tg/Feedbackbot.txt
+- assets/BotsApi/feedback
+- assets/BotsApi/feedback.txt
+- assets/BotsApi/premium
+- assets/BotsApi/server
+- assets/BotsApi/update
+- assets/Cleaner/dalvik.txt
+- assets/DynamicShell/DecryptKey.txt
+- assets/Msg/DecryptionError.txt
+- assets/Msg/ExceptionError.txt
+- assets/Msg/jsonError.txt
+- assets/Msg/swe.txt
+- assets/Premium/StringValue.txt
+- assets/Premium/activator
+- assets/Premium/key
+- assets/Premium/stringMakerKey.txt
+- assets/version.txt
+- assets/xposed_init

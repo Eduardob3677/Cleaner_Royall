@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/textview2" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Please Submit this Crash Log to fix this bug" />
+    <ScrollView android:id="@id/vscroll1" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="420.0dp">
+        <TextView android:textSize="12.0sp" android:textColor="#f44336" android:id="@id/report" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TextView" />
+    </ScrollView>
+    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/Help" android:background="#ccff90" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text=" ❓ Help " />
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear5" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginBottom="2.0dp">
+        <TextView android:textSize="12.0sp" android:textColor="#000000" android:gravity="center" android:id="@id/status" android:background="#b2dfdb" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="1.0dp" android:text=" Status" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="#000000" android:gravity="center" android:id="@id/submitbt" android:background="#b2dfdb" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="5.0dp" android:layout_marginTop="2.0dp" android:layout_marginBottom="1.0dp" android:text=" Submit Report" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,3 @@
+rm -rf /storage/*/LOST.DIR
+rm -rf /storage/*/*/LOST.DIR
+rm -rf /data/media/*/LOST.DIR

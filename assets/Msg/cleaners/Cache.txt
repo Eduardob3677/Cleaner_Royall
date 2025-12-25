@@ -1,0 +1,16 @@
+𝐂𝐚𝐜𝐡𝐞 𝐂𝐥𝐞𝐚𝐧𝐞𝐫 𝐀𝐜𝐭𝐮𝐚𝐥𝐥𝐲 𝐂𝐥𝐞𝐚𝐧𝐬 𝐓𝐡𝐞 𝐅𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠
+
+• All Apps Cache at system level 
+• Deeply Cleans All cache in /data & its subdirectories
+• Dynamically Clears All cache Folder  with its contents Globally
+
+• It wipe outs Cache Partition as well. 
+• It also clears code_cache
+• & cleans Cache from internal storage
+• Also Cleans cache from MultiUser(If Any)
+
+𝗘𝗻𝗵𝗮𝗻𝗰𝗲 𝗠𝗼𝗱𝗲
+• 𝑬𝒗𝒆𝒓𝒚 𝑺𝒊𝒏𝒈𝒍𝒆 𝒇𝒐𝒍𝒅𝒆𝒓 𝒏𝒂𝒎𝒊𝒏𝒈 '𝑪𝒂𝒄𝒉𝒆' 𝒐𝒓 '𝒄𝒂𝒄𝒉𝒆' 𝒘𝒊𝒕𝒉 𝒊𝒕𝒔 𝒄𝒐𝒏𝒕𝒆𝒏𝒕 𝒘𝒊𝒍𝒍 𝒃𝒆 𝒄𝒍𝒆𝒂𝒓𝒆𝒅 𝒇𝒓𝒐𝒎 𝒅𝒆𝒗𝒊𝒄𝒆 𝑮𝒍𝒐𝒃𝒂𝒍𝒍𝒚
+• Package Cache + Graphics Cache Cleaner Support
+
+more+++

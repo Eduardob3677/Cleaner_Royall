@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview1" android:padding="8.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:text="𝗩𝗲𝗿𝘀𝗶𝗼𝗻 : " />
+        <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/ver" android:padding="8.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear2" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview2" android:padding="8.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:text="𝗖𝗼𝗺𝗺𝗲𝗻𝘁 : " />
+        <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/cmt" android:padding="8.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear3" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview5" android:padding="8.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:text="𝗗𝗶𝗿𝗲𝗰𝘁𝗼𝗿𝗶𝗲𝘀 : " />
+        <HorizontalScrollView android:id="@id/hscroll1" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/bkp" android:padding="8.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" />
+        </HorizontalScrollView>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear9" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview8" android:padding="8.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:text="𝗦𝗹𝗼𝘁 : " />
+        <HorizontalScrollView android:id="@id/hscroll2" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/slot" android:padding="8.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" />
+        </HorizontalScrollView>
+    </LinearLayout>
+</LinearLayout>

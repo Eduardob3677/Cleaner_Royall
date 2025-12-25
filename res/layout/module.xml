@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/header" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="10.0dp">
+        <ImageView android:layout_gravity="center" android:id="@id/imageview2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/header" android:scaleType="center" />
+        <TextView android:textSize="14.0sp" android:textColor="#000000" android:id="@id/headL" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝐔𝐥𝐭𝐢𝐦𝐚𝐭𝐞 𝐒𝐲𝐬𝐭𝐞𝐦𝐥𝐞𝐬𝐬 𝐌𝐨𝐝𝐮𝐥𝐞 𝐟𝐨𝐫 𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐞𝐝 𝐁𝐚𝐜𝐤𝐠𝐫𝐨𝐮𝐧𝐝 𝐂𝐥𝐞𝐚𝐧𝐢𝐧𝐠 𝐚𝐭 𝐒𝐞𝐭 𝐈𝐧𝐭𝐞𝐫𝐯𝐚𝐥𝐬" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/infobox" android:background="#f9fbe7" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:layout_marginBottom="8.0dp" android:text="..............................................................................................................................................................." android:lines="2" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear106" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+        <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear107" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+            <ImageView android:enabled="false" android:id="@id/imageview35" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/easy_2" android:scaleType="center" />
+            <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/instTxt" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Install Module" />
+        </LinearLayout>
+        <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear111" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+            <ImageView android:id="@id/imageview38" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/module_1" android:scaleType="center" />
+            <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview61" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Actions &amp; Records" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear112" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+        <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear113" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+            <ImageView android:enabled="false" android:id="@id/imageview39" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/module_3" android:scaleType="center" />
+            <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview62" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Uninstall Module" />
+        </LinearLayout>
+        <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear117" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+            <ImageView android:id="@id/imageview42" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/module_2" android:scaleType="center" />
+            <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview65" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Module Status" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear100" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+        <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear101" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="3.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+            <ImageView android:enabled="false" android:id="@id/imageview31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/power_2" android:scaleType="center" />
+            <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview53" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable &amp; Start" />
+        </LinearLayout>
+        <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/linear102" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="3.0dp" android:layout_weight="1.0">
+            <ImageView android:id="@id/imageview32" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/power_1" android:scaleType="center" android:alpha="0.8" />
+            <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview55" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Disable &amp; Stop" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#f44336" android:gravity="center" android:id="@id/disabled" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="80.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="80.0dp" android:text="⚠️ Module is now Stopped" />
+    <ScrollView android:id="@id/vscroll1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/linear120" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ScrollView android:id="@id/vscroll2" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/linear121" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ScrollView android:id="@id/vscroll3" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <LinearLayout android:orientation="vertical" android:id="@id/linear123" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:id="@id/linear118" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:id="@id/linear119" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview66" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗧𝗶𝗺𝗲 𝗜𝗻𝘁𝗲𝗿𝘃𝗮𝗹 (in hr)" />
+                                    <Spinner android:id="@id/spinner1" android:padding="8.0dp" android:layout_width="100.0dp" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:spinnerMode="dropdown" />
+                                </LinearLayout>
+                                <CheckBox android:textSize="12.0sp" android:textColor="#000000" android:gravity="center" android:id="@id/boot" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="Start Auto Cleaning on Boot" />
+                                <CheckBox android:textSize="12.0sp" android:textColor="#000000" android:gravity="center" android:id="@id/log" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Record Cleaning Actions [ max : 30 ]" />
+                                <CheckBox android:textSize="12.0sp" android:textColor="#000000" android:gravity="center" android:id="@id/notification" android:padding="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Post Notification on Every CleanUp" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@id/linear122" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="14.0sp" android:textColor="#000000" android:layout_gravity="center" android:id="@id/textview67" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝗖𝗹𝗲𝗮𝗻𝗶𝗻𝗴 𝗣𝗮𝘁𝗰𝗵𝗲𝘀" />
+                                <ImageView android:layout_gravity="right|center" android:id="@id/imageview43" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/info_1" android:scaleType="fitCenter" android:alpha="0.5" />
+                            </LinearLayout>
+                            <Switch android:textSize="12.0sp" android:textColor="#000000" android:gravity="left|center" android:id="@id/dalvik" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="Clean Dalvik Cache after boot (later 3min)" />
+                            <Switch android:textSize="12.0sp" android:textColor="#000000" android:gravity="left|center" android:id="@id/cache" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="Clean Cache " />
+                            <Switch android:textSize="12.0sp" android:textColor="#000000" android:gravity="left|center" android:id="@id/logs" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="Clean Logs " />
+                            <Switch android:textSize="12.0sp" android:textColor="#000000" android:gravity="left|center" android:id="@id/oat" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="Oat (dex/vdex) Cleaner" />
+                            <Switch android:textSize="12.0sp" android:textColor="#000000" android:gravity="left|center" android:id="@id/trash" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="Trash Cleaner" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/linear42" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="14.0sp" android:textColor="#000000" android:id="@id/on" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="2.0dp" android:text=" Online Patches" />
+                                <TextView android:textSize="14.0sp" android:textColor="#000000" android:id="@id/pm" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="2.0dp" android:text=" Patch Manager" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@id/linear5" android:paddingLeft="7.0dp" android:paddingRight="7.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="2.0dp">
+                                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:id="@id/online" android:background="#b9f6ca" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="5.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="1.0dp" android:text="  Online Patches" android:layout_weight="1.0" />
+                                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:id="@id/manager" android:background="#b9f6ca" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="5.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="1.0dp" android:text="  𝐏𝐚𝐭𝐜𝐡 𝐌𝐚𝐧𝐚𝐠𝐞𝐫" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/result" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="500.0dp" android:text="TextView" />
+</LinearLayout>

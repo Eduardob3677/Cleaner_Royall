@@ -1,0 +1,18 @@
+𝐋𝐨𝐠𝐬 𝐂𝐥𝐞𝐚𝐧𝐞𝐫 𝐀𝐜𝐭𝐮𝐚𝐥𝐥𝐲 𝐂𝐥𝐞𝐚𝐧𝐬 𝐓𝐡𝐞 𝐅𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠
+
+•Clears All User & system Apps logs
+•Clears All Logs in /data and its subdirectories
+•Clears all Logs with extension '.log' Globally
+
+Logcat (Shifted to Mini Cleaner)
+/data log & logger files
+runtime.log & All apps update engine log
+Lsposed logs & its old logs
+thanox & fox logs
+
+• Also Cleans from MultiUser(If Any)
+
+[Enhanced Mode]
+𝐂𝐥𝐞𝐚𝐫𝐬 𝐚𝐥𝐥 𝐋𝐨𝐠𝐬 𝐰𝐢𝐭𝐡 𝐞𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧 '.𝐥𝐨𝐠'
+
+𝖒𝖔𝖗𝖊 +++

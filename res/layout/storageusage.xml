@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/vscroll1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/linear1" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@id/header" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="10.0dp">
+                <ImageView android:layout_gravity="center" android:id="@id/imageview1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/header" android:scaleType="center" />
+                <TextView android:textSize="12.0sp" android:textColor="#000000" android:id="@id/textview1" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="𝐓𝐡𝐢𝐬 𝐅𝐞𝐚𝐭𝐮𝐫𝐞 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮 𝐭𝐨 𝐆𝐞𝐭 𝐭𝐡𝐞 𝐬𝐢𝐳𝐞 𝐨𝐟 𝐬𝐨𝐦𝐞 PARTITIONS" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear31" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear32" android:padding="3.0dp" android:layout_width="250.0dp" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#3f51b5" android:gravity="center" android:layout_gravity="center" android:id="@id/textview30" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔹Fixed Storage [𝐓𝐨𝐭𝐚𝐥]" />
+                    <ImageView android:layout_gravity="center" android:id="@id/imageview3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_error_black" android:scaleType="center" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@id/totalfree" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear45" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear46" android:padding="3.0dp" android:layout_width="250.0dp" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#f50057" android:gravity="center" android:layout_gravity="center" android:id="@id/textview44" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Available Storage [𝐔𝐬𝐚𝐛𝐥𝐞]" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="#00e676" android:gravity="center" android:layout_gravity="center" android:id="@id/freeav" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear13" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear14" android:padding="3.0dp" android:layout_width="250.0dp" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#f50057" android:gravity="center" android:layout_gravity="center" android:id="@id/textview12" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="System [𝐏𝐚𝐫𝐭𝐢𝐭𝐢𝐨𝐧]" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@id/system" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear41" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear42" android:padding="3.0dp" android:layout_width="250.0dp" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#f50057" android:gravity="center" android:layout_gravity="center" android:id="@id/textview40" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="System [𝐔𝐬𝐞𝐝]" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@id/systemusage" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear39" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear40" android:padding="3.0dp" android:layout_width="250.0dp" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#f50057" android:gravity="center" android:layout_gravity="center" android:id="@id/textview38" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data [𝐏𝐚𝐫𝐭𝐢𝐭𝐢𝐨𝐧] [𝐔𝐬𝐞𝐝]" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@id/datausage" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear17" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear18" android:padding="3.0dp" android:layout_width="250.0dp" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#f50057" android:gravity="center" android:layout_gravity="center" android:id="@id/textview16" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Su &amp; Its Modules" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@id/magisk" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear19" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear20" android:padding="3.0dp" android:layout_width="250.0dp" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#f50057" android:gravity="center" android:layout_gravity="center" android:id="@id/textview18" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/storage/emulated/0/ " />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@id/internal" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear21" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear22" android:padding="3.0dp" android:layout_width="250.0dp" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#f50057" android:gravity="center" android:layout_gravity="center" android:id="@id/textview20" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dalvik-Cache" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@id/delvik" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear23" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear24" android:padding="3.0dp" android:layout_width="250.0dp" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#f50057" android:gravity="center" android:layout_gravity="center" android:id="@id/textview22" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Oat (odex/vdex) usage" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@id/oat" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear25" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear26" android:padding="3.0dp" android:layout_width="250.0dp" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#f50057" android:gravity="center" android:layout_gravity="center" android:id="@id/textview24" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Multi-Users Internal Storage" />
+                    <ImageView android:layout_gravity="center" android:id="@id/imageview2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_error_black" android:scaleType="center" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@id/multiInternal" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear33" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear34" android:padding="3.0dp" android:layout_width="250.0dp" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#f50057" android:gravity="center" android:layout_gravity="center" android:id="@id/textview32" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Logs [𝑬𝒙𝒕𝒆𝒏𝒕𝒊𝒐𝒏𝒔 𝒐𝒏𝒍𝒚]" />
+                    <ImageView android:layout_gravity="center" android:id="@id/imageview4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_error_black" android:scaleType="center" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@id/log" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear35" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear36" android:padding="3.0dp" android:layout_width="250.0dp" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#f50057" android:gravity="center" android:layout_gravity="center" android:id="@id/textview34" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vendor [𝐏𝐚𝐫𝐭𝐢𝐭𝐢𝐨𝐧]" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@id/vendor" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear57" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear58" android:padding="3.0dp" android:layout_width="250.0dp" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#f50057" android:gravity="center" android:layout_gravity="center" android:id="@id/textview56" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vendor [𝐔𝐬𝐞𝐝]" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@id/vendoru" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear59" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear60" android:padding="3.0dp" android:layout_width="250.0dp" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#f50057" android:gravity="center" android:layout_gravity="center" android:id="@id/textview58" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="System_ext [𝐏𝐚𝐫𝐭𝐢𝐭𝐢𝐨𝐧]" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@id/sysext" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+            <TextView android:textSize="10.0sp" android:textColor="#ffffff" android:id="@id/result" android:background="#ffffff" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear61" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="#000000" android:id="@id/Refresh" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="2.0dp" android:layout_marginRight="4.0dp" android:layout_marginBottom="2.0dp" android:text=" Refresh" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,56 @@
+#!/system/bin/sh
+# Script Created by @AraafRoyall
+
+
+# -------------------------------------------#
+
+
+
+MDK="/data/adb/modules/CleanerRoyall"
+MDATA="$MDK/xdata"
+
+
+if [ ! -d "$MDK" ]; then
+ echo "Module is Not Installed"
+ exit 0
+fi
+
+
+if [ -f "$MDK/xdata/duration.txt" ]; then
+ echo "Interval $(cat $MDK/xdata/duration.txt)"
+fi
+
+
+if [ -f "$MDATA/notify" ]; then
+ echo "notification is enabled"
+fi
+
+if [ -f "$MDK/xdata/bootstart" ]; then
+ echo "bootstart is enabled"
+fi
+
+
+if [ -f "$MDATA/dalvikClean.sh" ]; then
+ echo "cleandalvik is Enabled"
+fi
+
+
+if [ -f "$MDK/xdata/log" ]; then
+ echo "log is Enabled"
+fi
+
+
+if [ -f "$MDK/disable" ]; then
+ echo "Module is Disabled"
+fi
+
+if [ -f "$MDK/module.prop" ] && [ ! -f "$MDK/xdata/run" ]; then
+    echo "Module is Stopped"
+fi
+
+
+echo "Next Part"
+
+cat "$MDATA/scripts.txt"
+
+echo "End of File"

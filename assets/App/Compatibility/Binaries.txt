@@ -1,0 +1,16 @@
+rm
+which
+find
+du
+pm
+getenforce
+setenforce
+echo
+nohup
+mkdir
+touch
+cat
+sed
+wc
+tail
+getprop

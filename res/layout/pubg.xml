@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/linear1" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/textview1" android:padding="8.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select Package" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/radiogroup1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+            <RadioButton android:textSize="12.0sp" android:textColor="#000000" android:id="@id/pkg1" android:padding="8.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="com.pubg.imobile" />
+            <RadioButton android:textSize="12.0sp" android:textColor="#000000" android:id="@id/pkg2" android:padding="8.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="com.tencent.ig" />
+        </RadioGroup>
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/textview2" android:padding="8.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="Select Script Mode" />
+        <RadioGroup android:orientation="vertical" android:id="@id/radiogroup2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+            <RadioButton android:textSize="12.0sp" android:textColor="#000000" android:id="@id/ban" android:padding="8.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ban Cleanup" />
+            <RadioButton android:textSize="12.0sp" android:textColor="#000000" android:id="@id/log" android:padding="8.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Logs Cleanup" />
+            <RadioButton android:textSize="12.0sp" android:textColor="#000000" android:id="@id/device" android:padding="8.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DeviceID" />
+            <RadioButton android:textSize="12.0sp" android:textColor="#000000" android:id="@id/fresh" android:padding="8.0dp" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fresh Start" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

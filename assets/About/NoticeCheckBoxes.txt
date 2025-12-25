@@ -1,0 +1,5 @@
+Some feature may not work on all devices
+Never Collect Any Data
+Never Ask for Any Permission (Only Root)
+No Background work (Except Module)
+Most Powerfull Cleaner Ever Made
