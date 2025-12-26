@@ -116,6 +116,29 @@ def decrypt_text_key(encrypted_key: str, password: str = STRING_MAKER_KEY) -> st
     return decrypted.decode('utf-8')
 
 
+def print_usage_notes():
+    """Print usage notes about key generation"""
+    print("""
+NOTE: Due to the random IV generation in AES/CBC mode, each encryption 
+produces a different encrypted key, even for the same text key.
+
+All variations are valid and will decrypt to the same text key.
+
+The previously provided encrypted key may have been generated with:
+- A different encryption key
+- A different algorithm (ECB instead of CBC)
+- Or may contain a typo
+
+This newly generated key is guaranteed to be correct for the current
+encryption scheme used by Cleaner Royall Premium.
+
+To use this key:
+1. Copy the Encrypted Key above
+2. Use it in the premium activation process
+3. The app will decrypt it using the same algorithm
+    """)
+
+
 def main():
     """Main function"""
     print("""
@@ -177,25 +200,7 @@ def main():
     print("\n" + "="*60)
     print("IMPORTANT NOTES")
     print("="*60)
-    print("""
-NOTE: Due to the random IV generation in AES/CBC mode, each encryption 
-produces a different encrypted key, even for the same text key.
-
-All variations are valid and will decrypt to the same text key.
-
-The previously provided encrypted key may have been generated with:
-- A different encryption key
-- A different algorithm (ECB instead of CBC)
-- Or may contain a typo
-
-This newly generated key is guaranteed to be correct for the current
-encryption scheme used by Cleaner Royall Premium.
-
-To use this key:
-1. Copy the Encrypted Key above
-2. Use it in the premium activation process
-3. The app will decrypt it using the same algorithm
-    """)
+    print_usage_notes()
     
     print("\n[✓] Key generation completed successfully!")
     return 0

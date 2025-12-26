@@ -34,6 +34,10 @@ except ImportError:
 # Key from decrypted assets/Premium/stringMakerKey.txt
 STRING_MAKER_KEY = "AraafRoyall@1211"
 
+# Test key for interactive mode
+TEST_TEXT_KEY = "R5CW82XYYDL"
+TEST_PROVIDED_KEY = "$IVKdUrJz+X9NsPBHrCEl2Ma38lXFX8bAnX5QpssfgtkmU="
+
 
 def derive_aes_key(password: str) -> bytes:
     """
@@ -277,17 +281,15 @@ def cmd_interactive():
         
         elif choice == "3":
             print("\n[*] Testing with provided example...")
-            text_key = "R5CW82XYYDL"
             print(f"\n--- GENERATE ---")
-            encrypted = cmd_generate(text_key)
+            encrypted = cmd_generate(TEST_TEXT_KEY)
             
             print(f"\n--- VALIDATE PROVIDED KEY ---")
-            provided_key = "$IVKdUrJz+X9NsPBHrCEl2Ma38lXFX8bAnX5QpssfgtkmU="
-            cmd_validate(provided_key)
+            cmd_validate(TEST_PROVIDED_KEY)
             
             print(f"\n--- COMPARISON ---")
             print(f"Both keys are valid but different due to random IV.")
-            print(f"Both decrypt to the same text key: {text_key}")
+            print(f"Both decrypt to the same text key: {TEST_TEXT_KEY}")
         
         elif choice == "4":
             print("\n[*] Goodbye!")
