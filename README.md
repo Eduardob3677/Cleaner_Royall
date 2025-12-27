@@ -5,8 +5,11 @@ This repository contains tools and documentation for analyzing Smali code and de
 ## 📋 Contents
 
 - **decrypt_assets.py** - Automated decryption tool for all encrypted assets
+- **create_premium_forum_issue.py** - GitHub issue creator with RSA authentication
 - **SMALI_ANALYSIS.md** - Comprehensive Smali code analysis documentation
 - **DECRYPTED_KEYS.md** - Complete list of decrypted keys and secrets
+- **AUTHENTICATION_GUIDE.md** - Complete guide for SSH and gh CLI authentication (Spanish)
+- **COMANDOS_AUTENTICACION.md** - Quick reference commands for SSH and gh CLI (Spanish)
 - **decrypted_assets/** - Directory containing all decrypted files
 
 ## 🔍 What Was Analyzed
@@ -100,6 +103,28 @@ Encryption methods found:
 [*] Check results in: decrypted_assets/
 ```
 
+### GitHub Authentication
+
+For working with `create_premium_forum_issue.py` and GitHub operations:
+
+```bash
+# Quick SSH setup
+ssh-keygen -t ed25519 -C "your_email@example.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+# Add key to GitHub: https://github.com/settings/keys
+
+# Quick gh CLI setup
+sudo apt install gh -y  # or: brew install gh
+gh auth login
+gh auth status
+
+# See detailed guides:
+# - AUTHENTICATION_GUIDE.md (complete guide in Spanish)
+# - COMANDOS_AUTENTICACION.md (quick commands in Spanish)
+```
+
+
 ## 📚 Documentation
 
 ### 1. SMALI_ANALYSIS.md
@@ -127,6 +152,21 @@ Python decryption tool featuring:
 - Base64 decoding
 - PKCS5 padding removal
 - Batch file processing
+
+### 4. AUTHENTICATION_GUIDE.md
+Complete authentication guide (Spanish) covering:
+- SSH key generation and configuration
+- gh CLI installation and setup
+- GitHub integration with create_premium_forum_issue.py
+- Troubleshooting common authentication issues
+- Security best practices
+
+### 5. COMANDOS_AUTENTICACION.md
+Quick reference guide (Spanish) with:
+- Essential SSH commands
+- gh CLI authentication commands
+- Common workflows and verification steps
+- Quick troubleshooting tips
 
 ## 🔐 Encryption Details
 
